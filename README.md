@@ -1,0 +1,2 @@
+# logManager
+simulator log manager
