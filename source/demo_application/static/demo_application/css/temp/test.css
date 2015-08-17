@@ -1,0 +1,17 @@
+body {
+	font-family: Geneva, Tahoma, sans-serif;
+	/* when no "Gennva" in system, it will use "Tahoma"*/
+}
+
+h1, 
+h2 {
+	font-family: "Gill Sans", "Gill Sans MT";
+}
+
+p {
+	font-size: italic;
+	/*font-size: normal; cancel it*/
+	font-weight: bold;
+	/*font-weight: normal; cancel it*/ 
+	
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset=utf-8" />
+<title>Table Search Result</title>
+<link rel="stylesheet" type="text/css" media="screen" href="{{ STATIC_URL }}demo_application/css/table-result.css" />
+</head>
+
+<body>
+
+<table id="travel">
+	<p id="navigation"><a href="../">Search Agagin</a></p>
+	{% if no_data %}
+		<h2>No Data Searched for "{{testType}} -- {{testItem}}". Please Check your Start Time and End Time</h2>
+	{%else%}
+		<h2>Searched Data for "{{testType}} -- {{testItem}}"</h2>
+	{% endif %}
+    
+    <thead>    
+    	<tr>
+            <th scope="col" rowspan="2">Configuration</th>
+            <th scope="col" colspan={{columnLength}}>Software</th>
+        </tr>
+        
+        <tr>
+			{% for columnName in testColumn %}
+            <th scope="col">{{columnName}}</th>
+			{% endfor %}
+        </tr>        
+    </thead>
+    
+    <tbody>
+    	<tr>
+		{% for value in testRowAndValueList %}
+			{% if forloop.counter0 in testRowIndexList %}
+    			<th scope="row">{{value}}</th>
+			{% elif forloop.counter0 in testValueIndexList %}
+            	<td>{{value}}</td>
+				<tr></tr>
+			{% else %}
+				<td>{{value}}</td>
+			{% endif %}
+		{% endfor %}
+        </tr>
+    </tbody>
+
+</table>
+
+<p>Note: "-" means non-existing</p>
+
+</body>
+</html>

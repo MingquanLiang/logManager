@@ -1,0 +1,37 @@
+/* 
+1. Please remember to change the error message for "DateTimeField" in "/usr/local/lib/python2.7/site-packages/django/forms/fields.py".
+2. Please remember to change the IP in nginx conf("server_name 127.0.0.1 XXX.XXX.XXX.XXX;").
+3. Please remember to create a link for nginx conf file to "/etc/nginx/conf.d/"
+4. Please remember to change the dirname in nginx conf.
+4. Please remember to change "chdir", "module" in uwsgi ini file.
+5. Please remember to disable iptables and Selinux before startup django/uwsgi/nginx
+6. when startup, firstly, "uwsgi --ini mysite_uwsgi.ini" ; secondly, /etc/ini.d/nginx start
+7. Please remember to change the permission of "media" to "777" for nginx
+8. Please remember to setup PYTHON_EGG_CACHE. such as: "export PYTHON_EGG_CACHE=/tmp" (but make it as /tmp is in danger)
+9. Had Better set project directory as "/opt/architecture/simulator[/var/cache/nginx/simulator/simulator]".
+10. if nginx + uwsgi can NOT work, please use "uwsgi --http :8000 --module mysite.wsgi" Only.
+*/
+
+/* 
+When add a new field(test item) into simulatortestresult, some steps should be changed:
+
+1. views.py extractInformationFromAttachment(): should add the handle information about adding field;
+2. views.py uploadFilename(): in submit directly part, add some equation such as "siObject.testItemReversedOne = ...";
+3. views.py echoUploadFilename(): add some equation such as testItemReversedOne = float(postDict.get('testItemReversedOne'));
+				and siObject.testItemReversedOne = ..."
+
+
+siObject.__setattr__('testItemL1MissRate', 200) <==> siObject.testItemL1MissRate = 200
+
+
+
+And after add a new column in demo_application/models.py, PLease add a new column into table "demo_application_simulatortestitem"
+By SQL sentence: "ALTER table demo_application_simulatortestitem ADD testItemX double NULL;"
+
+
+
+TODO: now , when add a new field into simulatortestresult, 
+it should be change :
+1) database: "ALTER table demo_application_simulatortestitem ADD testItemX double default=-9.99;"
+2) change the extractInformationFromAttachment() in views.py
+*/

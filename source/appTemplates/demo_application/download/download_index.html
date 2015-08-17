@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en-us" >
+<head>
+<title>Download File List | Django site admin</title>
+<link rel="stylesheet" type="text/css" href="/static/admin/css/base.css" />
+<link rel="stylesheet" type="text/css" href="/static/admin/css/changelists.css" />
+
+<script type="text/javascript" src="/admin/jsi18n/"></script>
+<!--[if lte IE 7]><link rel="stylesheet" type="text/css" href="/static/admin/css/ie.css" /><![endif]-->
+
+<script type="text/javascript">window.__admin_media_prefix__ = "/static/admin/";</script>
+
+<script type="text/javascript" src="/static/admin/js/core.js"></script>
+<script type="text/javascript" src="/static/admin/js/admin/RelatedObjectLookups.js"></script>
+<script type="text/javascript" src="/static/admin/js/jquery.js"></script>
+<script type="text/javascript" src="/static/admin/js/jquery.init.js"></script>
+<script type="text/javascript" src="/static/admin/js/actions.js"></script>
+
+<script type="text/javascript">
+(function($) {
+	    $(document).ready(function($) {
+			        $("tr input.action-select").actions();
+					    });
+})(django.jQuery);
+</script>
+
+<meta name="robots" content="NONE,NOARCHIVE" />
+</head>
+
+<body class="change-list">
+<!-- Content -->
+<div id="content" class="flex">
+	<h1><a href="../../admin"><u>Home</u></a></h1>
+	<h4><a href=""><u>Search Download Files Again</u></a></h4>
+    <h2><li>Download File List For Your Search</li></h2>
+<div id="content-main">
+
+
+<div class="module" id="changelist">
+
+<form method="post" enctype="multipart/form-data">
+<div class="results">
+
+<table id="result_list">
+<thead>
+<tr>
+	<th scope="col"  class="sortable">
+		<div class="text"><center><a href=""><h3>Index</h3></a></center></div>
+    	<div class="clear"></div>
+	</th>
+	<th scope="col"  class="sortable">
+		<div class="text"><center><a href=""><h3>Test User</h3></a></center></div>
+    	<div class="clear"></div>
+	</th>
+	<th scope="col"  class="sortable">
+		<div class="text"><center><a href=""><h3>Filename</h3></a></center></div>
+    	<div class="clear"></div>
+	</th>
+	<th scope="col"  class="sortable">
+		<div class="text"><center><a href=""><h3>Upload Date Time</h3></a></center></div>
+    	<div class="clear"></div>
+	</th>
+	<th scope="col"  class="sortable">
+		<div class="text"><center><a href=""><h3>Record Test Result Time</h3></a></center></div>
+		<div class="clear"></div>
+	</th>
+	<th scope="col"  class="sortable">
+    	<div class="text"><center><a href=""><h3>Test Comment</h3></a></center></div>
+		<div class="clear"></div>
+	</th>
+	<th scope="col"  class="sortable">
+    	<div class="text"><center><a href=""><h3>Download</h3></a></center></div>
+		<div class="clear"></div>
+	</th>
+</tr>
+</thead>
+<tbody>
+	{% for i in downloadFileList %}
+	<tr class="row1">
+		<td><center>{{forloop.counter}}</center></td>
+		<th><center>{{i.testUser}}</center></th>
+		<td><a href="{{MEDIA_URL}}{{i.downloadFile}}"><center>{{i.fileName}}</center></a></td>
+		<td><center>{{i.uploadDate}} {{i.uploadTime}}</center></td>
+		<td><center>{{i.testRecordTime}}</center></td>
+		<td>{{i.testComment}}</td>
+		<td><center><input type="submit" value="download"></center></td>
+	</tr>
+	{% endfor %}
+</tbody>
+</table>
+
+</div>
+</form>
+
+</div>
+
+</div>
+
+</div>
+<!-- END Container -->
+
+</body>
+</html>

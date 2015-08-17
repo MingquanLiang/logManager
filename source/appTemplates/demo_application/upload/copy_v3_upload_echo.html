@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title></title>
+</head>
+<body>
+	<form method="post" enctype="multipart/form-data">
+		<table summary="" border="1">
+			<thead>
+				<tr>
+					<th scope="col" abbr="num">#</th>
+					<th scope="col" abbr="fn">Field Name</th>
+					<th scope="col" abbr="fv">Field Value</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					{% for mykey, myvalue in mydict.iteritems %}
+					<td>{{forloop.counter}}</td><td>{{mykey}}</td><td>{{myvalue}}</td><tr></tr>
+					{% endfor %}
+				</tr>
+			</tbody>
+		</table>
+		<!-- input name="Option" type="submit" value="Sumbit Directly" -->
+	</form>
+</body>
+</html>

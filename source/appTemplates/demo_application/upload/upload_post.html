@@ -1,0 +1,30 @@
+{% extends "admin/base_site.html" %}
+{% load i18n admin_static %}
+
+{% block extrastyle %}{{ block.super }}<link rel="stylesheet" type="text/css" href="{% static "admin/css/dashboard.css" %}" />{% endblock %}
+
+{% block coltype %}colMS{% endblock %}
+
+{% block bodyclass %}dashboard{% endblock %}
+
+{% block breadcrumbs %}{% endblock %}
+
+{% block anotherContent %}
+<div>
+</div>
+{% endblock anotherContent %}
+
+{% block content %}
+<div id="PostUploadFile">
+	<p class="head">
+		<a href="../../admin"><h3><u>Home</u></h3></a>
+<br>
+	</p>
+<h1>More Operations</h1>
+<br>
+
+<a href="../uploadFilename"><h2><li><u>Upload One More file?</u></li></h2></a>
+<a href="../searchIndex"><h3><li><u>Search Data?</u></li></h2></a>
+</div>
+<br>
+{% endblock content %}

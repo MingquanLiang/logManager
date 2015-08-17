@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Data Searching</title>
+
+	<link rel="stylesheet" type="text/css" media="screen" href="{{ STATIC_URL }}demo_application/css/search-index.css">
+
+	<!-- add for easyui combobox -->
+	<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}demo_application/css/easyui.css">
+	<script type="text/javascript" src="{{ STATIC_URL }}demo_application/js/jquery.min.js"></script>
+	<script type="text/javascript" src="{{ STATIC_URL }}demo_application/js/jquery.easyui.min.js"></script>
+
+	<script src="{{ STATIC_URL }}demo_application/laydate/laydate.js"></script>
+
+</head>
+
+<body>
+<div class="easyui-panel">
+	<p id="navigation"><a href="../../admin" style="font-size:1.6em">Home</a></p>
+	<h1 class="head">Please Choose Options to Get Data.</h1>
+
+<form id="ff" action="/demo_application/searchResult/" method="post">
+<table>
+<thead>
+	<tr>
+		<th scope="col">Display As</th>
+		<th scope="col">Key Word</th>
+		<th scope="col">Test Type</th>
+		<th scope="col">Start Time</th>
+		<th scope="col">End Time</th>
+	</tr>
+</thead>
+
+<tbody>
+<tr>
+	<td>
+	<select class="easyui-combobox" name="Display As">
+	<option value="0" disabled="disabled" selected="selected">Please choose display form</option>
+	<option value="table">table</option>
+	<option value="figure">figure</option>
+	</select>
+	</td>
+
+	<td>
+	<select class="easyui-combobox" name="Key Word">
+	<option value="0" disabled="disabled" selected="selected">Please choose your key word</option>
+	{% for testItem in testItemList %}
+	<option value="{{testItem}}">{{testItem}}</option>
+	{% endfor %}
+	</select>
+	</td>
+
+	<td>
+	<select class="easyui-combobox" name="Test Type">
+	<option value="0" disabled="disabled" selected="selected">Please choose your test type</option>
+	{% for testType in testTypeList %}
+	<option value="{{testType}}">{{testType}}</option>
+	{% endfor %}
+	</select>
+	</td>
+
+	<td>
+	<input name="Start Time" value='<s:property value="#Start Time"/>' placeholder="Input Start Time" class="laydate-icon" onclick="laydate({istime:true, format:'YYYY-MM-DD hh:mm:ss', min:'2015-01-01 00:00:00', max:laydate.now()})">
+	</td>
+
+	<td>
+	<input name="End Time"  value='<s:property value="#End Time"/>'  placeholder="Input End Time" class="laydate-icon" onclick="laydate({istime:true, format:'YYYY-MM-DD hh:mm:ss', min:'2015-01-01 00:00:00', max:laydate.now()})">
+	</td>
+
+</tr>
+<td colspan='5'><input id="submission" type="submit" value="Make a Search"></td>
+</table>
+<tbody>
+
+</form>
+<br>
+
+<h3>
+NOTE:<br>
+(1) Data for searching can be shown as table and figure(curve line).<br>
+(2) Neither the specified "Start Time" nor the specified "End Time" == all time.
+</h3>
+
+</div>
+</body>
+</html>

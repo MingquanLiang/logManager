@@ -1,0 +1,38 @@
+{% extends "admin/base_site.html" %}
+{% load i18n admin_static %}
+
+{% block extrastyle %}{{ block.super }}<link rel="stylesheet" type="text/css" href="{% static "admin/css/dashboard.css" %}" />{% endblock %}
+
+{% block coltype %}colMS{% endblock %}
+
+{% block bodyclass %}dashboard{% endblock %}
+
+{% block breadcrumbs %}{% endblock %}
+
+{% block anotherContent %}
+<div>
+</div>
+{% endblock anotherContent %}
+
+{% block content %}
+
+<div id="UploadFile">
+	<p class="head">
+		<a href="../../admin"><h3><u>Home</u></h3></a>
+<br>
+	</p>
+<h1>Please Upload a File.</h1>
+<br>
+	<form method="post" enctype="multipart/form-data">
+	{% for field in uploadFileFormObject %}
+		<div class="fieldWrapper">
+		{{ field.label_tag }}  :  {{ field }} 
+		{{ field.errors }}
+		</div>
+	{% endfor %}
+	<input name="Option" type="submit" value="Preview Before Sumbit">
+	<input name="Option" type="submit" value="Sumbit Directly">
+	</form>
+</div>
+<br>
+{% endblock content %}

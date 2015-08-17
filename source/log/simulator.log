@@ -1,0 +1,1073 @@
+[ 2015-08-14 21:22:30 ] Try To Startup Django + uwsgi + nginx ... 
+[uWSGI] getting INI configuration from mysite_uwsgi.ini
+*** Starting uWSGI 2.0.10 (64bit) on [Fri Aug 14 21:22:30 2015] ***
+compiled with version: 4.4.7 20120313 (Red Hat 4.4.7-11) on 08 August 2015 12:30:04
+os: Linux-2.6.32-504.el6.x86_64 #1 SMP Wed Oct 15 04:27:16 UTC 2014
+nodename: localhost.localdomain
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /opt/architecture/simulator
+detected binary path: /usr/local/bin/uwsgi
+setgid() to 490
+setuid() to 494
+chdir() to /opt/architecture/simulator
+your processes number limit is 14841
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /opt/architecture/simulator/log/mysite.sock fd 3
+Python version: 2.7.5 (default, Jul 31 2015, 23:06:22)  [GCC 4.4.7 20120313 (Red Hat 4.4.7-11)]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x2270240
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 363840 bytes (355 KB) for 4 cores
+*** Operational MODE: preforking ***
+added /opt/architecture/simulator/ to pythonpath.
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x2270240 pid: 3489 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 3489)
+spawned uWSGI worker 1 (pid: 3492, cores: 1)
+spawned uWSGI worker 2 (pid: 3493, cores: 1)
+spawned uWSGI worker 3 (pid: 3494, cores: 1)
+spawned uWSGI worker 4 (pid: 3495, cores: 1)
+==> It is OK for uwsgi to Startup
+[pid: 3492|app: 0|req: 1/1] 192.168.1.100 () {36 vars in 594 bytes} [Fri Aug 14 21:22:44 2015] GET / => generated 1865 bytes in 121 msecs (HTTP/1.1 200) 7 headers in 438 bytes (1 switches on core 0)
+[pid: 3493|app: 0|req: 1/2] 192.168.1.100 () {40 vars in 699 bytes} [Fri Aug 14 21:22:45 2015] GET /favicon.ico => generated 2415 bytes in 84 msecs (HTTP/1.1 404) 1 headers in 51 bytes (2 switches on core 0)
+[pid: 3492|app: 0|req: 2/3] 192.168.1.100 () {46 vars in 894 bytes} [Fri Aug 14 21:22:49 2015] POST / => generated 2022 bytes in 52 msecs (HTTP/1.1 200) 7 headers in 438 bytes (1 switches on core 0)
+[pid: 3492|app: 0|req: 3/4] 192.168.1.100 () {46 vars in 894 bytes} [Fri Aug 14 21:22:58 2015] POST / => generated 0 bytes in 51 msecs (HTTP/1.1 302) 7 headers in 357 bytes (1 switches on core 0)
+[pid: 3493|app: 0|req: 2/5] 192.168.1.100 () {42 vars in 777 bytes} [Fri Aug 14 21:22:59 2015] GET / => generated 7750 bytes in 37 msecs (HTTP/1.1 200) 5 headers in 185 bytes (1 switches on core 0)
+[pid: 3492|app: 0|req: 4/6] 192.168.1.100 () {40 vars in 823 bytes} [Fri Aug 14 21:23:05 2015] GET /admin/demo_application/simulatortestresult/ => generated 35641 bytes in 72 msecs (HTTP/1.1 200) 6 headers in 307 bytes (1 switches on core 0)
+[pid: 3493|app: 0|req: 3/7] 192.168.1.100 () {40 vars in 746 bytes} [Fri Aug 14 21:23:05 2015] GET /admin/jsi18n/ => generated 2158 bytes in 32 msecs (HTTP/1.1 200) 2 headers in 64 bytes (2 switches on core 0)
+[pid: 3492|app: 0|req: 5/8] 192.168.1.100 () {40 vars in 826 bytes} [Fri Aug 14 21:23:08 2015] GET /admin/demo_application/ => generated 4748 bytes in 15 msecs (HTTP/1.1 200) 5 headers in 185 bytes (1 switches on core 0)
+[pid: 3493|app: 0|req: 4/9] 192.168.1.100 () {40 vars in 772 bytes} [Fri Aug 14 21:23:10 2015] GET /admin/ => generated 7750 bytes in 17 msecs (HTTP/1.1 200) 5 headers in 185 bytes (1 switches on core 0)
+[pid: 3492|app: 0|req: 6/10] 192.168.1.100 () {40 vars in 799 bytes} [Fri Aug 14 21:23:13 2015] GET /demo_application/searchIndex => generated 0 bytes in 0 msecs (HTTP/1.1 301) 2 headers in 141 bytes (1 switches on core 0)
+[pid: 3495|app: 0|req: 1/11] 192.168.1.100 () {40 vars in 801 bytes} [Fri Aug 14 21:23:13 2015] GET /demo_application/searchIndex/ => generated 2946 bytes in 87 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[01;31m One of Start Time and End Time may be empty. Dump the time: Start Time=[<s:property value="#Start Time"/>] and End Time=[<s:property value="#End Time"/>] [0m
+[pid: 3492|app: 0|req: 7/12] 192.168.1.100 () {46 vars in 983 bytes} [Fri Aug 14 21:23:21 2015] POST /demo_application/searchResult/ => generated 20831 bytes in 31 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 3492|app: 0|req: 8/13] 192.168.1.100 () {40 vars in 801 bytes} [Fri Aug 14 21:23:35 2015] GET /demo_application/ => generated 2946 bytes in 7 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 3492|app: 0|req: 9/14] 192.168.1.100 () {46 vars in 969 bytes} [Fri Aug 14 21:23:44 2015] POST /demo_application/searchResult/ => generated 11487 bytes in 37 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 3492|app: 0|req: 10/15] 192.168.1.100 () {40 vars in 882 bytes} [Fri Aug 14 21:24:02 2015] GET /admin => generated 0 bytes in 1 msecs (HTTP/1.1 301) 2 headers in 118 bytes (1 switches on core 0)
+[pid: 3493|app: 0|req: 5/16] 192.168.1.100 () {40 vars in 884 bytes} [Fri Aug 14 21:24:02 2015] GET /admin/ => generated 7750 bytes in 22 msecs (HTTP/1.1 200) 5 headers in 185 bytes (2 switches on core 0)
+[ 2015-08-14 21:57:12 ] Try To Stop Django + uwsgi ... 
+...brutally killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /opt/architecture/simulator
+closing all non-uwsgi socket fds > 2 (max_fd = 1024)...
+found fd 3 mapped to socket 0 (/opt/architecture/simulator/log/mysite.sock)
+running /usr/local/bin/uwsgi
+[uWSGI] getting INI configuration from mysite_uwsgi.ini
+*** Starting uWSGI 2.0.10 (64bit) on [Fri Aug 14 21:57:13 2015] ***
+compiled with version: 4.4.7 20120313 (Red Hat 4.4.7-11) on 08 August 2015 12:30:04
+os: Linux-2.6.32-504.el6.x86_64 #1 SMP Wed Oct 15 04:27:16 UTC 2014
+nodename: localhost.localdomain
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /opt/architecture/simulator
+detected binary path: /usr/local/bin/uwsgi
+chdir() to /opt/architecture/simulator
+your processes number limit is 14841
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited UNIX address /opt/architecture/simulator/log/mysite.sock fd 3
+Python version: 2.7.5 (default, Jul 31 2015, 23:06:22)  [GCC 4.4.7 20120313 (Red Hat 4.4.7-11)]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x1470780
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 363840 bytes (355 KB) for 4 cores
+*** Operational MODE: preforking ***
+added /opt/architecture/simulator/ to pythonpath.
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x1470780 pid: 3489 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 3489)
+spawned uWSGI worker 1 (pid: 3671, cores: 1)
+spawned uWSGI worker 2 (pid: 3672, cores: 1)
+spawned uWSGI worker 3 (pid: 3673, cores: 1)
+spawned uWSGI worker 4 (pid: 3674, cores: 1)
+Fri Aug 14 21:57:14 2015 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Fri Aug 14 21:57:15 2015 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Fri Aug 14 21:57:15 2015 - uWSGI worker 3 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Fri Aug 14 21:57:15 2015 - uWSGI worker 4 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+[ 2015-08-14 21:57:21 ] Try To Startup Django + uwsgi + nginx ... 
+[uWSGI] getting INI configuration from mysite_uwsgi.ini
+*** Starting uWSGI 2.0.10 (64bit) on [Fri Aug 14 21:57:21 2015] ***
+compiled with version: 4.4.7 20120313 (Red Hat 4.4.7-11) on 08 August 2015 12:30:04
+os: Linux-2.6.32-504.el6.x86_64 #1 SMP Wed Oct 15 04:27:16 UTC 2014
+nodename: localhost.localdomain
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /opt/architecture/simulator
+detected binary path: /usr/local/bin/uwsgi
+setgid() to 490
+setuid() to 494
+chdir() to /opt/architecture/simulator
+your processes number limit is 14841
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /opt/architecture/simulator/log/mysite.sock fd 3
+Python version: 2.7.5 (default, Jul 31 2015, 23:06:22)  [GCC 4.4.7 20120313 (Red Hat 4.4.7-11)]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0xc4c250
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 363840 bytes (355 KB) for 4 cores
+*** Operational MODE: preforking ***
+added /opt/architecture/simulator/ to pythonpath.
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0xc4c250 pid: 3691 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 3691)
+spawned uWSGI worker 1 (pid: 3694, cores: 1)
+spawned uWSGI worker 2 (pid: 3695, cores: 1)
+spawned uWSGI worker 3 (pid: 3696, cores: 1)
+spawned uWSGI worker 4 (pid: 3697, cores: 1)
+==> It is OK for uwsgi to Startup
+[pid: 3694|app: 0|req: 1/1] 192.168.1.100 () {42 vars in 915 bytes} [Fri Aug 14 21:57:34 2015] GET /admin/ => generated 7750 bytes in 111 msecs (HTTP/1.1 200) 5 headers in 185 bytes (1 switches on core 0)
+[ 2015-08-14 22:00:38 ] Try To Stop Django + uwsgi ... 
+...brutally killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /opt/architecture/simulator
+closing all non-uwsgi socket fds > 2 (max_fd = 1024)...
+found fd 3 mapped to socket 0 (/opt/architecture/simulator/log/mysite.sock)
+running /usr/local/bin/uwsgi
+[uWSGI] getting INI configuration from mysite_uwsgi.ini
+*** Starting uWSGI 2.0.10 (64bit) on [Fri Aug 14 22:00:39 2015] ***
+compiled with version: 4.4.7 20120313 (Red Hat 4.4.7-11) on 08 August 2015 12:30:04
+os: Linux-2.6.32-504.el6.x86_64 #1 SMP Wed Oct 15 04:27:16 UTC 2014
+nodename: localhost.localdomain
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /opt/architecture/simulator
+detected binary path: /usr/local/bin/uwsgi
+chdir() to /opt/architecture/simulator
+your processes number limit is 14841
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited UNIX address /opt/architecture/simulator/log/mysite.sock fd 3
+Python version: 2.7.5 (default, Jul 31 2015, 23:06:22)  [GCC 4.4.7 20120313 (Red Hat 4.4.7-11)]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x261f790
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 363840 bytes (355 KB) for 4 cores
+*** Operational MODE: preforking ***
+added /opt/architecture/simulator/ to pythonpath.
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x261f790 pid: 3691 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 3691)
+spawned uWSGI worker 1 (pid: 3808, cores: 1)
+spawned uWSGI worker 2 (pid: 3809, cores: 1)
+spawned uWSGI worker 3 (pid: 3810, cores: 1)
+spawned uWSGI worker 4 (pid: 3811, cores: 1)
+Fri Aug 14 22:00:40 2015 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Fri Aug 14 22:00:40 2015 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Fri Aug 14 22:00:40 2015 - uWSGI worker 3 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Fri Aug 14 22:00:40 2015 - uWSGI worker 4 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+[ 2015-08-14 22:00:56 ] Try To Startup Django + uwsgi + nginx ... 
+[uWSGI] getting INI configuration from mysite_uwsgi.ini
+*** Starting uWSGI 2.0.10 (64bit) on [Fri Aug 14 22:00:56 2015] ***
+compiled with version: 4.4.7 20120313 (Red Hat 4.4.7-11) on 08 August 2015 12:30:04
+os: Linux-2.6.32-504.el6.x86_64 #1 SMP Wed Oct 15 04:27:16 UTC 2014
+nodename: localhost.localdomain
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /opt/architecture/simulator
+detected binary path: /usr/local/bin/uwsgi
+setgid() to 490
+setuid() to 494
+chdir() to /opt/architecture/simulator
+your processes number limit is 14841
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /opt/architecture/simulator/log/mysite.sock fd 3
+Python version: 2.7.5 (default, Jul 31 2015, 23:06:22)  [GCC 4.4.7 20120313 (Red Hat 4.4.7-11)]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x269a250
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 363840 bytes (355 KB) for 4 cores
+*** Operational MODE: preforking ***
+added /opt/architecture/simulator/ to pythonpath.
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x269a250 pid: 3827 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 3827)
+spawned uWSGI worker 1 (pid: 3830, cores: 1)
+spawned uWSGI worker 2 (pid: 3831, cores: 1)
+spawned uWSGI worker 3 (pid: 3832, cores: 1)
+spawned uWSGI worker 4 (pid: 3833, cores: 1)
+==> It is OK for uwsgi to Startup
+[pid: 3830|app: 0|req: 1/1] 192.168.1.100 () {38 vars in 812 bytes} [Fri Aug 14 22:01:21 2015] GET /admin/ => generated 8149 bytes in 108 msecs (HTTP/1.1 200) 5 headers in 185 bytes (1 switches on core 0)
+[pid: 3831|app: 0|req: 1/2] 192.168.1.100 () {40 vars in 904 bytes} [Fri Aug 14 22:01:23 2015] GET /admin/demo_application/meme/ => generated 2835 bytes in 112 msecs (HTTP/1.1 200) 6 headers in 307 bytes (1 switches on core 0)
+[pid: 3830|app: 0|req: 2/3] 192.168.1.100 () {40 vars in 836 bytes} [Fri Aug 14 22:01:24 2015] GET /admin/jsi18n/ => generated 2158 bytes in 11 msecs (HTTP/1.1 200) 2 headers in 64 bytes (1 switches on core 0)
+[pid: 3830|app: 0|req: 3/4] 192.168.1.100 () {40 vars in 934 bytes} [Fri Aug 14 22:01:26 2015] GET /admin/demo_application/meme/add/ => generated 4208 bytes in 25 msecs (HTTP/1.1 200) 6 headers in 307 bytes (1 switches on core 0)
+[pid: 3831|app: 0|req: 2/5] 192.168.1.100 () {40 vars in 840 bytes} [Fri Aug 14 22:01:26 2015] GET /admin/jsi18n/ => generated 2158 bytes in 16 msecs (HTTP/1.1 200) 2 headers in 64 bytes (2 switches on core 0)
+[pid: 3830|app: 0|req: 4/6] 192.168.1.100 () {40 vars in 867 bytes} [Fri Aug 14 22:02:03 2015] GET /admin/ => generated 8149 bytes in 19 msecs (HTTP/1.1 200) 5 headers in 185 bytes (1 switches on core 0)
+[pid: 3830|app: 0|req: 5/7] 192.168.1.100 () {40 vars in 874 bytes} [Fri Aug 14 22:03:14 2015] GET /admin/logout/ => generated 1116 bytes in 17 msecs (HTTP/1.1 200) 6 headers in 316 bytes (1 switches on core 0)
+...brutally killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /opt/architecture/simulator
+closing all non-uwsgi socket fds > 2 (max_fd = 1024)...
+found fd 3 mapped to socket 0 (/opt/architecture/simulator/log/mysite.sock)
+running /usr/local/bin/uwsgi
+[uWSGI] getting INI configuration from mysite_uwsgi.ini
+*** Starting uWSGI 2.0.10 (64bit) on [Sat Aug 15 00:19:02 2015] ***
+compiled with version: 4.4.7 20120313 (Red Hat 4.4.7-11) on 08 August 2015 12:30:04
+os: Linux-2.6.32-504.el6.x86_64 #1 SMP Wed Oct 15 04:27:16 UTC 2014
+nodename: localhost.localdomain
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /opt/architecture/simulator
+detected binary path: /usr/local/bin/uwsgi
+chdir() to /opt/architecture/simulator
+your processes number limit is 14841
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited UNIX address /opt/architecture/simulator/log/mysite.sock fd 3
+Python version: 2.7.5 (default, Jul 31 2015, 23:06:22)  [GCC 4.4.7 20120313 (Red Hat 4.4.7-11)]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x1930790
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 363840 bytes (355 KB) for 4 cores
+*** Operational MODE: preforking ***
+added /opt/architecture/simulator/ to pythonpath.
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x1930790 pid: 3827 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 3827)
+spawned uWSGI worker 1 (pid: 4927, cores: 1)
+spawned uWSGI worker 2 (pid: 4928, cores: 1)
+spawned uWSGI worker 3 (pid: 4929, cores: 1)
+spawned uWSGI worker 4 (pid: 4930, cores: 1)
+[ 2015-08-15 13:16:47 ] Try To Startup Django + uwsgi + nginx ... 
+[uWSGI] getting INI configuration from mysite_uwsgi.ini
+*** Starting uWSGI 2.0.10 (64bit) on [Sat Aug 15 13:16:47 2015] ***
+compiled with version: 4.4.7 20120313 (Red Hat 4.4.7-11) on 08 August 2015 12:30:04
+os: Linux-2.6.32-504.el6.x86_64 #1 SMP Wed Oct 15 04:27:16 UTC 2014
+nodename: localhost.localdomain
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /opt/architecture/simulator
+detected binary path: /usr/local/bin/uwsgi
+setgid() to 490
+setuid() to 494
+chdir() to /opt/architecture/simulator
+your processes number limit is 14841
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /opt/architecture/simulator/log/mysite.sock fd 3
+Python version: 2.7.5 (default, Jul 31 2015, 23:06:22)  [GCC 4.4.7 20120313 (Red Hat 4.4.7-11)]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x782250
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 363840 bytes (355 KB) for 4 cores
+*** Operational MODE: preforking ***
+added /opt/architecture/simulator/ to pythonpath.
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x782250 pid: 2989 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 2989)
+spawned uWSGI worker 1 (pid: 2992, cores: 1)
+spawned uWSGI worker 2 (pid: 2993, cores: 1)
+spawned uWSGI worker 3 (pid: 2994, cores: 1)
+spawned uWSGI worker 4 (pid: 2995, cores: 1)
+==> It is OK for uwsgi to Startup
+[pid: 2992|app: 0|req: 1/1] 192.168.1.103 () {42 vars in 903 bytes} [Sat Aug 15 13:17:08 2015] GET /admin/ => generated 105070 bytes in 171 msecs (HTTP/1.1 500) 2 headers in 77 bytes (1 switches on core 0)
+[ 2015-08-15 13:19:54 ] Try To Stop Django + uwsgi ... 
+...brutally killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /opt/architecture/simulator
+closing all non-uwsgi socket fds > 2 (max_fd = 1024)...
+found fd 3 mapped to socket 0 (/opt/architecture/simulator/log/mysite.sock)
+running /usr/local/bin/uwsgi
+[uWSGI] getting INI configuration from mysite_uwsgi.ini
+*** Starting uWSGI 2.0.10 (64bit) on [Sat Aug 15 13:19:55 2015] ***
+compiled with version: 4.4.7 20120313 (Red Hat 4.4.7-11) on 08 August 2015 12:30:04
+os: Linux-2.6.32-504.el6.x86_64 #1 SMP Wed Oct 15 04:27:16 UTC 2014
+nodename: localhost.localdomain
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /opt/architecture/simulator
+detected binary path: /usr/local/bin/uwsgi
+chdir() to /opt/architecture/simulator
+your processes number limit is 14841
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited UNIX address /opt/architecture/simulator/log/mysite.sock fd 3
+Python version: 2.7.5 (default, Jul 31 2015, 23:06:22)  [GCC 4.4.7 20120313 (Red Hat 4.4.7-11)]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x19ae790
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 363840 bytes (355 KB) for 4 cores
+*** Operational MODE: preforking ***
+added /opt/architecture/simulator/ to pythonpath.
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x19ae790 pid: 2989 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 2989)
+spawned uWSGI worker 1 (pid: 3051, cores: 1)
+spawned uWSGI worker 2 (pid: 3052, cores: 1)
+spawned uWSGI worker 3 (pid: 3053, cores: 1)
+spawned uWSGI worker 4 (pid: 3054, cores: 1)
+Sat Aug 15 13:19:56 2015 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Aug 15 13:19:56 2015 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Aug 15 13:19:56 2015 - uWSGI worker 3 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Aug 15 13:19:56 2015 - uWSGI worker 4 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+[ 2015-08-15 13:20:23 ] Try To Startup Django + uwsgi + nginx ... 
+[uWSGI] getting INI configuration from mysite_uwsgi.ini
+*** Starting uWSGI 2.0.10 (64bit) on [Sat Aug 15 13:20:23 2015] ***
+compiled with version: 4.4.7 20120313 (Red Hat 4.4.7-11) on 08 August 2015 12:30:04
+os: Linux-2.6.32-504.el6.x86_64 #1 SMP Wed Oct 15 04:27:16 UTC 2014
+nodename: localhost.localdomain
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /opt/architecture/simulator
+detected binary path: /usr/local/bin/uwsgi
+setgid() to 490
+setuid() to 494
+chdir() to /opt/architecture/simulator
+your processes number limit is 14841
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /opt/architecture/simulator/log/mysite.sock fd 3
+Python version: 2.7.5 (default, Jul 31 2015, 23:06:22)  [GCC 4.4.7 20120313 (Red Hat 4.4.7-11)]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x1833250
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 363840 bytes (355 KB) for 4 cores
+*** Operational MODE: preforking ***
+added /opt/architecture/simulator/ to pythonpath.
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x1833250 pid: 3074 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 3074)
+spawned uWSGI worker 1 (pid: 3077, cores: 1)
+spawned uWSGI worker 2 (pid: 3078, cores: 1)
+spawned uWSGI worker 3 (pid: 3079, cores: 1)
+spawned uWSGI worker 4 (pid: 3080, cores: 1)
+==> It is OK for uwsgi to Startup
+[pid: 3077|app: 0|req: 1/1] 192.168.1.103 () {38 vars in 747 bytes} [Sat Aug 15 13:20:32 2015] GET / => generated 1865 bytes in 99 msecs (HTTP/1.1 200) 7 headers in 438 bytes (2 switches on core 0)
+[pid: 3078|app: 0|req: 1/2] 192.168.1.103 () {46 vars in 946 bytes} [Sat Aug 15 13:20:34 2015] POST / => generated 0 bytes in 130 msecs (HTTP/1.1 302) 7 headers in 357 bytes (2 switches on core 0)
+[pid: 3077|app: 0|req: 2/3] 192.168.1.103 () {42 vars in 829 bytes} [Sat Aug 15 13:20:34 2015] GET / => generated 7750 bytes in 18 msecs (HTTP/1.1 200) 5 headers in 185 bytes (1 switches on core 0)
+[pid: 3077|app: 0|req: 3/4] 192.168.1.103 () {38 vars in 747 bytes} [Sat Aug 15 13:24:47 2015] GET / => generated 7750 bytes in 20 msecs (HTTP/1.1 200) 5 headers in 185 bytes (1 switches on core 0)
+[pid: 3078|app: 0|req: 2/5] 192.168.1.103 () {40 vars in 875 bytes} [Sat Aug 15 13:24:51 2015] GET /admin/demo_application/simulatortestresult/ => generated 7845 bytes in 34 msecs (HTTP/1.1 200) 6 headers in 307 bytes (1 switches on core 0)
+[pid: 3077|app: 0|req: 4/6] 192.168.1.103 () {40 vars in 798 bytes} [Sat Aug 15 13:24:51 2015] GET /admin/jsi18n/ => generated 2158 bytes in 17 msecs (HTTP/1.1 200) 2 headers in 64 bytes (2 switches on core 0)
+[pid: 3078|app: 0|req: 3/7] 192.168.1.103 () {40 vars in 926 bytes} [Sat Aug 15 13:24:53 2015] GET /admin/demo_application/simulatortestresult/add/ => generated 21707 bytes in 56 msecs (HTTP/1.1 200) 6 headers in 307 bytes (2 switches on core 0)
+[pid: 3077|app: 0|req: 5/8] 192.168.1.103 () {40 vars in 802 bytes} [Sat Aug 15 13:24:53 2015] GET /admin/jsi18n/ => generated 2158 bytes in 14 msecs (HTTP/1.1 200) 2 headers in 64 bytes (2 switches on core 0)
+[pid: 3077|app: 0|req: 6/9] 192.168.1.103 () {46 vars in 1159 bytes} [Sat Aug 15 13:26:00 2015] POST /admin/demo_application/simulatortestresult/add/ => generated 22189 bytes in 66 msecs (HTTP/1.1 200) 6 headers in 307 bytes (2 switches on core 0)
+[pid: 3078|app: 0|req: 4/10] 192.168.1.103 () {40 vars in 802 bytes} [Sat Aug 15 13:26:00 2015] GET /admin/jsi18n/ => generated 2158 bytes in 14 msecs (HTTP/1.1 200) 2 headers in 64 bytes (2 switches on core 0)
+[pid: 3077|app: 0|req: 7/11] 192.168.1.103 () {46 vars in 1159 bytes} [Sat Aug 15 13:26:55 2015] POST /admin/demo_application/simulatortestresult/add/ => generated 22189 bytes in 59 msecs (HTTP/1.1 200) 6 headers in 307 bytes (1 switches on core 0)
+[pid: 3078|app: 0|req: 5/12] 192.168.1.103 () {40 vars in 802 bytes} [Sat Aug 15 13:26:55 2015] GET /admin/jsi18n/ => generated 2158 bytes in 12 msecs (HTTP/1.1 200) 2 headers in 64 bytes (2 switches on core 0)
+[pid: 3077|app: 0|req: 8/13] 192.168.1.103 () {40 vars in 848 bytes} [Sat Aug 15 13:30:06 2015] GET /admin/ => generated 7750 bytes in 20 msecs (HTTP/1.1 200) 5 headers in 185 bytes (1 switches on core 0)
+[pid: 3078|app: 0|req: 6/14] 192.168.1.103 () {40 vars in 821 bytes} [Sat Aug 15 13:30:08 2015] GET /admin/logout/ => generated 1116 bytes in 13 msecs (HTTP/1.1 200) 6 headers in 316 bytes (1 switches on core 0)
+[pid: 3077|app: 0|req: 9/15] 192.168.1.103 () {42 vars in 903 bytes} [Sat Aug 15 13:30:10 2015] GET /admin/ => generated 1877 bytes in 14 msecs (HTTP/1.1 200) 7 headers in 438 bytes (1 switches on core 0)
+[pid: 3078|app: 0|req: 7/16] 192.168.1.103 () {46 vars in 964 bytes} [Sat Aug 15 13:30:13 2015] POST /admin/ => generated 0 bytes in 47 msecs (HTTP/1.1 302) 7 headers in 363 bytes (1 switches on core 0)
+[pid: 3077|app: 0|req: 10/17] 192.168.1.103 () {42 vars in 847 bytes} [Sat Aug 15 13:30:13 2015] GET /admin/ => generated 7750 bytes in 22 msecs (HTTP/1.1 200) 5 headers in 185 bytes (1 switches on core 0)
+[pid: 3078|app: 0|req: 8/18] 192.168.1.103 () {42 vars in 930 bytes} [Sat Aug 15 13:30:15 2015] GET /admin/demo_application/simulatortestresult/ => generated 7845 bytes in 25 msecs (HTTP/1.1 200) 6 headers in 307 bytes (1 switches on core 0)
+[pid: 3077|app: 0|req: 11/19] 192.168.1.103 () {40 vars in 798 bytes} [Sat Aug 15 13:30:15 2015] GET /admin/jsi18n/ => generated 2158 bytes in 11 msecs (HTTP/1.1 200) 2 headers in 64 bytes (1 switches on core 0)
+[pid: 3078|app: 0|req: 9/20] 192.168.1.103 () {40 vars in 926 bytes} [Sat Aug 15 13:30:17 2015] GET /admin/demo_application/simulatortestresult/add/ => generated 21707 bytes in 50 msecs (HTTP/1.1 200) 6 headers in 307 bytes (1 switches on core 0)
+[pid: 3077|app: 0|req: 12/21] 192.168.1.103 () {40 vars in 802 bytes} [Sat Aug 15 13:30:17 2015] GET /admin/jsi18n/ => generated 2158 bytes in 11 msecs (HTTP/1.1 200) 2 headers in 64 bytes (2 switches on core 0)
+[pid: 3077|app: 0|req: 13/22] 192.168.1.103 () {46 vars in 1159 bytes} [Sat Aug 15 13:30:53 2015] POST /admin/demo_application/simulatortestresult/add/ => generated 22192 bytes in 66 msecs (HTTP/1.1 200) 6 headers in 307 bytes (1 switches on core 0)
+[pid: 3078|app: 0|req: 10/23] 192.168.1.103 () {40 vars in 802 bytes} [Sat Aug 15 13:30:53 2015] GET /admin/jsi18n/ => generated 2158 bytes in 11 msecs (HTTP/1.1 200) 2 headers in 64 bytes (2 switches on core 0)
+[pid: 3077|app: 0|req: 14/24] 192.168.1.103 () {42 vars in 903 bytes} [Sat Aug 15 13:30:58 2015] GET /admin/ => generated 7750 bytes in 22 msecs (HTTP/1.1 200) 5 headers in 185 bytes (1 switches on core 0)
+[pid: 3077|app: 0|req: 15/25] 192.168.1.103 () {42 vars in 876 bytes} [Sat Aug 15 13:31:10 2015] GET /admin/logout/ => generated 1116 bytes in 13 msecs (HTTP/1.1 200) 6 headers in 316 bytes (1 switches on core 0)
+[pid: 3078|app: 0|req: 11/26] 192.168.1.103 () {42 vars in 903 bytes} [Sat Aug 15 13:31:11 2015] GET /admin/ => generated 1877 bytes in 13 msecs (HTTP/1.1 200) 7 headers in 438 bytes (1 switches on core 0)
+[pid: 3077|app: 0|req: 16/27] 192.168.1.103 () {46 vars in 964 bytes} [Sat Aug 15 13:33:46 2015] POST /admin/ => generated 0 bytes in 45 msecs (HTTP/1.1 302) 7 headers in 363 bytes (1 switches on core 0)
+[pid: 3078|app: 0|req: 12/28] 192.168.1.103 () {42 vars in 847 bytes} [Sat Aug 15 13:33:46 2015] GET /admin/ => generated 7750 bytes in 25 msecs (HTTP/1.1 200) 5 headers in 185 bytes (1 switches on core 0)
+[pid: 3077|app: 0|req: 17/29] 192.168.1.103 () {40 vars in 881 bytes} [Sat Aug 15 13:33:49 2015] GET /admin/demo_application/simulatortestresult/ => generated 7845 bytes in 28 msecs (HTTP/1.1 200) 6 headers in 307 bytes (1 switches on core 0)
+[pid: 3078|app: 0|req: 13/30] 192.168.1.103 () {40 vars in 798 bytes} [Sat Aug 15 13:33:49 2015] GET /admin/jsi18n/ => generated 2158 bytes in 12 msecs (HTTP/1.1 200) 2 headers in 64 bytes (1 switches on core 0)
+[pid: 3077|app: 0|req: 18/31] 192.168.1.103 () {40 vars in 926 bytes} [Sat Aug 15 13:33:51 2015] GET /admin/demo_application/simulatortestresult/add/ => generated 21707 bytes in 55 msecs (HTTP/1.1 200) 6 headers in 307 bytes (1 switches on core 0)
+[pid: 3078|app: 0|req: 14/32] 192.168.1.103 () {40 vars in 802 bytes} [Sat Aug 15 13:33:51 2015] GET /admin/jsi18n/ => generated 2158 bytes in 6 msecs (HTTP/1.1 200) 2 headers in 64 bytes (2 switches on core 0)
+[pid: 3077|app: 0|req: 19/33] 192.168.1.103 () {42 vars in 903 bytes} [Sat Aug 15 13:33:57 2015] GET /admin/ => generated 7750 bytes in 21 msecs (HTTP/1.1 200) 5 headers in 185 bytes (1 switches on core 0)
+[pid: 3077|app: 0|req: 20/34] 192.168.1.103 () {40 vars in 821 bytes} [Sat Aug 15 13:37:30 2015] GET /admin/logout/ => generated 1116 bytes in 15 msecs (HTTP/1.1 200) 6 headers in 316 bytes (1 switches on core 0)
+[ 2015-08-15 13:41:04 ] Try To Stop Django + uwsgi ... 
+...brutally killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /opt/architecture/simulator
+closing all non-uwsgi socket fds > 2 (max_fd = 1024)...
+found fd 3 mapped to socket 0 (/opt/architecture/simulator/log/mysite.sock)
+running /usr/local/bin/uwsgi
+[uWSGI] getting INI configuration from mysite_uwsgi.ini
+*** Starting uWSGI 2.0.10 (64bit) on [Sat Aug 15 13:41:05 2015] ***
+compiled with version: 4.4.7 20120313 (Red Hat 4.4.7-11) on 08 August 2015 12:30:04
+os: Linux-2.6.32-504.el6.x86_64 #1 SMP Wed Oct 15 04:27:16 UTC 2014
+nodename: localhost.localdomain
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /opt/architecture/simulator
+detected binary path: /usr/local/bin/uwsgi
+chdir() to /opt/architecture/simulator
+your processes number limit is 14841
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited UNIX address /opt/architecture/simulator/log/mysite.sock fd 3
+Python version: 2.7.5 (default, Jul 31 2015, 23:06:22)  [GCC 4.4.7 20120313 (Red Hat 4.4.7-11)]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x24f1790
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 363840 bytes (355 KB) for 4 cores
+*** Operational MODE: preforking ***
+added /opt/architecture/simulator/ to pythonpath.
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x24f1790 pid: 3074 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 3074)
+spawned uWSGI worker 1 (pid: 3218, cores: 1)
+spawned uWSGI worker 2 (pid: 3219, cores: 1)
+spawned uWSGI worker 3 (pid: 3220, cores: 1)
+spawned uWSGI worker 4 (pid: 3221, cores: 1)
+Sat Aug 15 13:41:06 2015 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Aug 15 13:41:06 2015 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Aug 15 13:41:06 2015 - uWSGI worker 3 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Aug 15 13:41:06 2015 - uWSGI worker 4 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+[ 2015-08-15 15:34:42 ] Try To Startup Django + uwsgi + nginx ... 
+[uWSGI] getting INI configuration from mysite_uwsgi.ini
+*** Starting uWSGI 2.0.10 (64bit) on [Sat Aug 15 15:34:42 2015] ***
+compiled with version: 4.4.7 20120313 (Red Hat 4.4.7-11) on 08 August 2015 12:30:04
+os: Linux-2.6.32-504.el6.x86_64 #1 SMP Wed Oct 15 04:27:16 UTC 2014
+nodename: localhost.localdomain
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /opt/architecture/simulator
+detected binary path: /usr/local/bin/uwsgi
+setgid() to 490
+setuid() to 494
+chdir() to /opt/architecture/simulator
+your processes number limit is 14841
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /opt/architecture/simulator/log/mysite.sock fd 3
+Python version: 2.7.5 (default, Jul 31 2015, 23:06:22)  [GCC 4.4.7 20120313 (Red Hat 4.4.7-11)]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x158b250
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 363840 bytes (355 KB) for 4 cores
+*** Operational MODE: preforking ***
+added /opt/architecture/simulator/ to pythonpath.
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x158b250 pid: 4019 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 4019)
+spawned uWSGI worker 1 (pid: 4022, cores: 1)
+spawned uWSGI worker 2 (pid: 4023, cores: 1)
+spawned uWSGI worker 3 (pid: 4024, cores: 1)
+spawned uWSGI worker 4 (pid: 4025, cores: 1)
+==> It is OK for uwsgi to Startup
+[pid: 4022|app: 0|req: 1/1] 192.168.1.103 () {38 vars in 823 bytes} [Sat Aug 15 15:34:56 2015] GET /admin/ => generated 9865 bytes in 106 msecs (HTTP/1.1 200) 5 headers in 185 bytes (1 switches on core 0)
+[pid: 4023|app: 0|req: 1/2] 192.168.1.103 () {42 vars in 940 bytes} [Sat Aug 15 15:34:59 2015] GET /admin/logout/ => generated 1116 bytes in 108 msecs (HTTP/1.1 200) 6 headers in 316 bytes (1 switches on core 0)
+[pid: 4022|app: 0|req: 2/3] 192.168.1.103 () {40 vars in 878 bytes} [Sat Aug 15 15:35:00 2015] GET /admin/ => generated 1877 bytes in 13 msecs (HTTP/1.1 200) 7 headers in 438 bytes (1 switches on core 0)
+[pid: 4023|app: 0|req: 2/4] 192.168.1.103 () {46 vars in 1028 bytes} [Sat Aug 15 15:35:02 2015] POST /admin/ => generated 0 bytes in 50 msecs (HTTP/1.1 302) 7 headers in 363 bytes (1 switches on core 0)
+[pid: 4022|app: 0|req: 3/5] 192.168.1.103 () {42 vars in 911 bytes} [Sat Aug 15 15:35:02 2015] GET /admin/ => generated 9865 bytes in 24 msecs (HTTP/1.1 200) 5 headers in 185 bytes (1 switches on core 0)
+[pid: 4023|app: 0|req: 3/6] 192.168.1.103 () {40 vars in 945 bytes} [Sat Aug 15 15:35:03 2015] GET /admin/demo_application/simulatortestresult/ => generated 5560 bytes in 27 msecs (HTTP/1.1 200) 6 headers in 307 bytes (1 switches on core 0)
+[pid: 4022|app: 0|req: 4/7] 192.168.1.103 () {40 vars in 862 bytes} [Sat Aug 15 15:35:03 2015] GET /admin/jsi18n/ => generated 2158 bytes in 12 msecs (HTTP/1.1 200) 2 headers in 64 bytes (1 switches on core 0)
+[pid: 4023|app: 0|req: 4/8] 192.168.1.103 () {42 vars in 963 bytes} [Sat Aug 15 15:35:06 2015] GET /admin/ => generated 9865 bytes in 24 msecs (HTTP/1.1 200) 5 headers in 185 bytes (1 switches on core 0)
+[pid: 4022|app: 0|req: 5/9] 192.168.1.103 () {40 vars in 885 bytes} [Sat Aug 15 15:35:07 2015] GET /admin/logout/ => generated 1116 bytes in 16 msecs (HTTP/1.1 200) 6 headers in 316 bytes (1 switches on core 0)
+[ 2015-08-15 15:35:12 ] Try To Stop Django + uwsgi ... 
+...brutally killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /opt/architecture/simulator
+closing all non-uwsgi socket fds > 2 (max_fd = 1024)...
+found fd 3 mapped to socket 0 (/opt/architecture/simulator/log/mysite.sock)
+running /usr/local/bin/uwsgi
+[uWSGI] getting INI configuration from mysite_uwsgi.ini
+*** Starting uWSGI 2.0.10 (64bit) on [Sat Aug 15 15:35:13 2015] ***
+compiled with version: 4.4.7 20120313 (Red Hat 4.4.7-11) on 08 August 2015 12:30:04
+os: Linux-2.6.32-504.el6.x86_64 #1 SMP Wed Oct 15 04:27:16 UTC 2014
+nodename: localhost.localdomain
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /opt/architecture/simulator
+detected binary path: /usr/local/bin/uwsgi
+chdir() to /opt/architecture/simulator
+your processes number limit is 14841
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited UNIX address /opt/architecture/simulator/log/mysite.sock fd 3
+Python version: 2.7.5 (default, Jul 31 2015, 23:06:22)  [GCC 4.4.7 20120313 (Red Hat 4.4.7-11)]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x12a5790
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 363840 bytes (355 KB) for 4 cores
+*** Operational MODE: preforking ***
+added /opt/architecture/simulator/ to pythonpath.
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x12a5790 pid: 4019 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 4019)
+spawned uWSGI worker 1 (pid: 4081, cores: 1)
+spawned uWSGI worker 2 (pid: 4082, cores: 1)
+spawned uWSGI worker 3 (pid: 4083, cores: 1)
+spawned uWSGI worker 4 (pid: 4084, cores: 1)
+Sat Aug 15 15:35:14 2015 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Aug 15 15:35:14 2015 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Aug 15 15:35:14 2015 - uWSGI worker 3 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Aug 15 15:35:14 2015 - uWSGI worker 4 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+[ 2015-08-15 15:41:13 ] Try To Startup Django + uwsgi + nginx ... 
+[uWSGI] getting INI configuration from mysite_uwsgi.ini
+*** Starting uWSGI 2.0.10 (64bit) on [Sat Aug 15 15:41:13 2015] ***
+compiled with version: 4.4.7 20120313 (Red Hat 4.4.7-11) on 08 August 2015 12:30:04
+os: Linux-2.6.32-504.el6.x86_64 #1 SMP Wed Oct 15 04:27:16 UTC 2014
+nodename: localhost.localdomain
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /opt/architecture/simulator
+detected binary path: /usr/local/bin/uwsgi
+setgid() to 490
+setuid() to 494
+chdir() to /opt/architecture/simulator
+your processes number limit is 14841
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /opt/architecture/simulator/log/mysite.sock fd 3
+Python version: 2.7.5 (default, Jul 31 2015, 23:06:22)  [GCC 4.4.7 20120313 (Red Hat 4.4.7-11)]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x1657240
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 363840 bytes (355 KB) for 4 cores
+*** Operational MODE: preforking ***
+added /opt/architecture/simulator/ to pythonpath.
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x1657240 pid: 2247 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 2247)
+spawned uWSGI worker 1 (pid: 2250, cores: 1)
+spawned uWSGI worker 2 (pid: 2251, cores: 1)
+spawned uWSGI worker 3 (pid: 2252, cores: 1)
+spawned uWSGI worker 4 (pid: 2253, cores: 1)
+==> It is OK for uwsgi to Startup
+[pid: 2250|app: 0|req: 1/1] 192.168.1.103 () {36 vars in 594 bytes} [Sat Aug 15 15:41:38 2015] GET / => generated 1865 bytes in 237 msecs (HTTP/1.1 200) 7 headers in 438 bytes (1 switches on core 0)
+[pid: 2251|app: 0|req: 1/2] 192.168.1.103 () {40 vars in 699 bytes} [Sat Aug 15 15:41:38 2015] GET /favicon.ico => generated 2415 bytes in 94 msecs (HTTP/1.1 404) 1 headers in 51 bytes (2 switches on core 0)
+[ 2015-08-15 15:42:41 ] Try To Stop Django + uwsgi ... 
+...brutally killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /opt/architecture/simulator
+closing all non-uwsgi socket fds > 2 (max_fd = 1024)...
+found fd 3 mapped to socket 0 (/opt/architecture/simulator/log/mysite.sock)
+running /usr/local/bin/uwsgi
+[uWSGI] getting INI configuration from mysite_uwsgi.ini
+*** Starting uWSGI 2.0.10 (64bit) on [Sat Aug 15 15:42:42 2015] ***
+compiled with version: 4.4.7 20120313 (Red Hat 4.4.7-11) on 08 August 2015 12:30:04
+os: Linux-2.6.32-504.el6.x86_64 #1 SMP Wed Oct 15 04:27:16 UTC 2014
+nodename: localhost.localdomain
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /opt/architecture/simulator
+detected binary path: /usr/local/bin/uwsgi
+chdir() to /opt/architecture/simulator
+your processes number limit is 14841
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited UNIX address /opt/architecture/simulator/log/mysite.sock fd 3
+Python version: 2.7.5 (default, Jul 31 2015, 23:06:22)  [GCC 4.4.7 20120313 (Red Hat 4.4.7-11)]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x110a780
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 363840 bytes (355 KB) for 4 cores
+*** Operational MODE: preforking ***
+added /opt/architecture/simulator/ to pythonpath.
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x110a780 pid: 2247 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 2247)
+spawned uWSGI worker 1 (pid: 2329, cores: 1)
+spawned uWSGI worker 2 (pid: 2330, cores: 1)
+spawned uWSGI worker 3 (pid: 2331, cores: 1)
+spawned uWSGI worker 4 (pid: 2332, cores: 1)
+Sat Aug 15 15:42:43 2015 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Aug 15 15:42:43 2015 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Aug 15 15:42:43 2015 - uWSGI worker 3 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Aug 15 15:42:43 2015 - uWSGI worker 4 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+[ 2015-08-15 15:43:10 ] Try To Startup Django + uwsgi + nginx ... 
+[uWSGI] getting INI configuration from mysite_uwsgi.ini
+*** Starting uWSGI 2.0.10 (64bit) on [Sat Aug 15 15:43:10 2015] ***
+compiled with version: 4.4.7 20120313 (Red Hat 4.4.7-11) on 08 August 2015 12:30:04
+os: Linux-2.6.32-504.el6.x86_64 #1 SMP Wed Oct 15 04:27:16 UTC 2014
+nodename: localhost.localdomain
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /opt/architecture/simulator
+detected binary path: /usr/local/bin/uwsgi
+setgid() to 490
+setuid() to 494
+chdir() to /opt/architecture/simulator
+your processes number limit is 14841
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /opt/architecture/simulator/log/mysite.sock fd 3
+Python version: 2.7.5 (default, Jul 31 2015, 23:06:22)  [GCC 4.4.7 20120313 (Red Hat 4.4.7-11)]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x174f250
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 363840 bytes (355 KB) for 4 cores
+*** Operational MODE: preforking ***
+added /opt/architecture/simulator/ to pythonpath.
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x174f250 pid: 2357 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 2357)
+spawned uWSGI worker 1 (pid: 2360, cores: 1)
+spawned uWSGI worker 2 (pid: 2361, cores: 1)
+spawned uWSGI worker 3 (pid: 2362, cores: 1)
+spawned uWSGI worker 4 (pid: 2363, cores: 1)
+==> It is OK for uwsgi to Startup
+[pid: 2360|app: 0|req: 1/1] 192.168.1.103 () {40 vars in 750 bytes} [Sat Aug 15 15:43:19 2015] GET / => generated 1865 bytes in 100 msecs (HTTP/1.1 200) 7 headers in 438 bytes (2 switches on core 0)
+[pid: 2361|app: 0|req: 1/2] 192.168.1.103 () {46 vars in 894 bytes} [Sat Aug 15 15:43:21 2015] POST / => generated 0 bytes in 137 msecs (HTTP/1.1 302) 7 headers in 357 bytes (2 switches on core 0)
+[pid: 2360|app: 0|req: 2/3] 192.168.1.103 () {42 vars in 777 bytes} [Sat Aug 15 15:43:21 2015] GET / => generated 9865 bytes in 22 msecs (HTTP/1.1 200) 5 headers in 185 bytes (1 switches on core 0)
+[pid: 2360|app: 0|req: 3/4] 192.168.1.103 () {40 vars in 823 bytes} [Sat Aug 15 15:43:23 2015] GET /admin/demo_application/simulatortestresult/ => generated 3355 bytes in 33 msecs (HTTP/1.1 200) 6 headers in 307 bytes (1 switches on core 0)
+[pid: 2360|app: 0|req: 4/5] 192.168.1.103 () {40 vars in 746 bytes} [Sat Aug 15 15:43:23 2015] GET /admin/jsi18n/ => generated 2158 bytes in 31 msecs (HTTP/1.1 200) 2 headers in 64 bytes (2 switches on core 0)
+[pid: 2360|app: 0|req: 5/6] 192.168.1.103 () {40 vars in 792 bytes} [Sat Aug 15 15:43:26 2015] GET /admin/ => generated 9865 bytes in 20 msecs (HTTP/1.1 200) 5 headers in 185 bytes (2 switches on core 0)
+[pid: 2361|app: 0|req: 2/7] 192.168.1.103 () {40 vars in 805 bytes} [Sat Aug 15 15:43:27 2015] GET /demo_application/uploadFilename => generated 0 bytes in 0 msecs (HTTP/1.1 301) 2 headers in 144 bytes (1 switches on core 0)
+[pid: 2363|app: 0|req: 1/8] 192.168.1.103 () {40 vars in 807 bytes} [Sat Aug 15 15:43:27 2015] GET /demo_application/uploadFilename/ => generated 2211 bytes in 87 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 0)
+[pid: 2360|app: 0|req: 6/9] 192.168.1.103 () {40 vars in 779 bytes} [Sat Aug 15 15:43:29 2015] GET /admin => generated 0 bytes in 0 msecs (HTTP/1.1 301) 2 headers in 118 bytes (1 switches on core 0)
+[pid: 2362|app: 0|req: 1/10] 192.168.1.103 () {42 vars in 836 bytes} [Sat Aug 15 15:43:29 2015] GET /admin/ => generated 9865 bytes in 112 msecs (HTTP/1.1 200) 5 headers in 185 bytes (1 switches on core 0)
+[pid: 2360|app: 0|req: 7/11] 192.168.1.103 () {42 vars in 878 bytes} [Sat Aug 15 15:43:29 2015] GET /admin/demo_application/simulatortestresult/ => generated 3355 bytes in 20 msecs (HTTP/1.1 200) 6 headers in 307 bytes (1 switches on core 0)
+[pid: 2361|app: 0|req: 3/12] 192.168.1.103 () {40 vars in 746 bytes} [Sat Aug 15 15:43:29 2015] GET /admin/jsi18n/ => generated 2158 bytes in 11 msecs (HTTP/1.1 200) 2 headers in 64 bytes (1 switches on core 0)
+[pid: 2360|app: 0|req: 8/13] 192.168.1.103 () {40 vars in 874 bytes} [Sat Aug 15 15:43:31 2015] GET /admin/demo_application/simulatortestresult/add/ => generated 21875 bytes in 57 msecs (HTTP/1.1 200) 6 headers in 307 bytes (2 switches on core 0)
+[pid: 2360|app: 0|req: 9/14] 192.168.1.103 () {40 vars in 750 bytes} [Sat Aug 15 15:43:31 2015] GET /admin/jsi18n/ => generated 2158 bytes in 20 msecs (HTTP/1.1 200) 2 headers in 64 bytes (2 switches on core 0)
+[pid: 2360|app: 0|req: 10/15] 192.168.1.103 () {46 vars in 1107 bytes} [Sat Aug 15 15:45:00 2015] POST /admin/demo_application/simulatortestresult/add/ => generated 0 bytes in 21 msecs (HTTP/1.1 302) 7 headers in 486 bytes (1 switches on core 0)
+[pid: 2361|app: 0|req: 4/16] 192.168.1.103 () {42 vars in 1106 bytes} [Sat Aug 15 15:45:00 2015] GET /admin/demo_application/simulatortestresult/ => generated 5248 bytes in 37 msecs (HTTP/1.1 200) 7 headers in 389 bytes (1 switches on core 0)
+[pid: 2360|app: 0|req: 11/17] 192.168.1.103 () {40 vars in 746 bytes} [Sat Aug 15 15:45:00 2015] GET /admin/jsi18n/ => generated 2158 bytes in 11 msecs (HTTP/1.1 200) 2 headers in 64 bytes (1 switches on core 0)
+[pid: 2361|app: 0|req: 5/18] 192.168.1.103 () {42 vars in 847 bytes} [Sat Aug 15 15:45:02 2015] GET /admin/ => generated 9845 bytes in 21 msecs (HTTP/1.1 200) 5 headers in 185 bytes (2 switches on core 0)
+[pid: 2360|app: 0|req: 12/19] 192.168.1.103 () {40 vars in 807 bytes} [Sat Aug 15 15:45:04 2015] GET /demo_application/uploadFilename/ => generated 2211 bytes in 6 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[01;32m Sumbit Directly [0m
+/usr/local/lib/python2.7/site-packages/django/db/models/fields/__init__.py:808: RuntimeWarning: DateTimeField received a naive datetime (2015-08-15 15:45:47.478534) while time zone support is active.
+  RuntimeWarning)
+[pid: 2360|app: 0|req: 13/20] 192.168.1.103 () {46 vars in 1062 bytes} [Sat Aug 15 15:45:47 2015] POST /demo_application/uploadFilename/ => generated 0 bytes in 9 msecs (HTTP/1.1 302) 2 headers in 136 bytes (1 switches on core 0)
+[pid: 2361|app: 0|req: 6/21] 192.168.1.103 () {42 vars in 881 bytes} [Sat Aug 15 15:45:47 2015] GET /demo_application/postUploadFilename/ => generated 1298 bytes in 10 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 2360|app: 0|req: 14/22] 192.168.1.103 () {40 vars in 837 bytes} [Sat Aug 15 15:45:48 2015] GET /demo_application/uploadFilename/ => generated 2211 bytes in 7 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[01;32m Preview Buttom [0m
+[pid: 2360|app: 0|req: 15/23] 192.168.1.103 () {46 vars in 1068 bytes} [Sat Aug 15 15:46:23 2015] POST /demo_application/uploadFilename/ => generated 5882 bytes in 17 msecs (HTTP/1.1 200) 1 headers in 59 bytes (10 switches on core 0)
+[01;35m [<QueryDict: {u'testResultDetailLink': [u'www.google.com'], u'testItemReversedThree': [u'18.7184623008'], u'testUser': [u'LMQ'], u'testRecordTime': [u'2015-08-15 16:01:00'], u'testSoftware': [u'Software 100'], u'testConfiguration': [u'CPU=POWER8 mem=31G harddisk=859G'], u'fileName': [u'simulator_deployment.tar.gz'], u'testComment': [u'my comments 3'], u'testItemReversedOne': [u'11.518784217'], u'testItemL1MissRate': [u'18.2764340964'], u'testItemReversedTwo': [u'13.4783387161'], u'testItemMemoryBandwidth': [u'17.1539073908'], u'testTime': [u'2015-08-15 15:46:23'], u'testType': [u'MCU'], u'testItemIPC': [u'15.2890563009'], u'Option': [u'Sumbit']}>] [0m
+/usr/local/lib/python2.7/site-packages/django/db/models/fields/__init__.py:808: RuntimeWarning: DateTimeField received a naive datetime (2015-08-15 16:01:00) while time zone support is active.
+  RuntimeWarning)
+/usr/local/lib/python2.7/site-packages/django/db/models/fields/__init__.py:808: RuntimeWarning: DateTimeField received a naive datetime (2015-08-15 15:46:23) while time zone support is active.
+  RuntimeWarning)
+[pid: 2360|app: 0|req: 16/24] 192.168.1.103 () {46 vars in 1070 bytes} [Sat Aug 15 15:46:40 2015] POST /demo_application/echoUploadFilename/ => generated 0 bytes in 5 msecs (HTTP/1.1 302) 2 headers in 136 bytes (1 switches on core 0)
+[pid: 2361|app: 0|req: 7/25] 192.168.1.103 () {42 vars in 881 bytes} [Sat Aug 15 15:46:40 2015] GET /demo_application/postUploadFilename/ => generated 1298 bytes in 6 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 2360|app: 0|req: 17/26] 192.168.1.103 () {40 vars in 829 bytes} [Sat Aug 15 15:46:42 2015] GET /demo_application/searchIndex => generated 0 bytes in 0 msecs (HTTP/1.1 301) 2 headers in 141 bytes (1 switches on core 0)
+[pid: 2363|app: 0|req: 2/27] 192.168.1.103 () {40 vars in 831 bytes} [Sat Aug 15 15:46:42 2015] GET /demo_application/searchIndex/ => generated 2946 bytes in 9 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 2360|app: 0|req: 18/28] 192.168.1.103 () {42 vars in 836 bytes} [Sat Aug 15 15:46:44 2015] GET /admin/ => generated 9845 bytes in 19 msecs (HTTP/1.1 200) 5 headers in 185 bytes (2 switches on core 0)
+[pid: 2361|app: 0|req: 8/29] 192.168.1.103 () {40 vars in 819 bytes} [Sat Aug 15 15:46:46 2015] GET /admin/demo_application/uploadfilename/ => generated 5488 bytes in 26 msecs (HTTP/1.1 200) 6 headers in 307 bytes (1 switches on core 0)
+[pid: 2360|app: 0|req: 19/30] 192.168.1.103 () {40 vars in 741 bytes} [Sat Aug 15 15:46:46 2015] GET /admin/jsi18n/ => generated 2158 bytes in 12 msecs (HTTP/1.1 200) 2 headers in 64 bytes (2 switches on core 0)
+[pid: 2361|app: 0|req: 9/31] 192.168.1.103 () {42 vars in 842 bytes} [Sat Aug 15 15:46:47 2015] GET /admin/ => generated 9845 bytes in 19 msecs (HTTP/1.1 200) 5 headers in 185 bytes (1 switches on core 0)
+[pid: 2360|app: 0|req: 20/32] 192.168.1.103 () {42 vars in 884 bytes} [Sat Aug 15 15:46:50 2015] GET /admin/demo_application/simulatortestresult/ => generated 5568 bytes in 27 msecs (HTTP/1.1 200) 6 headers in 307 bytes (1 switches on core 0)
+[pid: 2361|app: 0|req: 10/33] 192.168.1.103 () {40 vars in 746 bytes} [Sat Aug 15 15:46:50 2015] GET /admin/jsi18n/ => generated 2158 bytes in 11 msecs (HTTP/1.1 200) 2 headers in 64 bytes (1 switches on core 0)
+[pid: 2360|app: 0|req: 21/34] 192.168.1.103 () {42 vars in 842 bytes} [Sat Aug 15 15:46:52 2015] GET /admin/ => generated 9845 bytes in 21 msecs (HTTP/1.1 200) 5 headers in 185 bytes (2 switches on core 0)
+[pid: 2361|app: 0|req: 11/35] 192.168.1.103 () {40 vars in 809 bytes} [Sat Aug 15 15:46:58 2015] GET /demo_application/downloadFilename => generated 0 bytes in 0 msecs (HTTP/1.1 301) 2 headers in 146 bytes (1 switches on core 0)
+[pid: 2362|app: 0|req: 2/36] 192.168.1.103 () {40 vars in 811 bytes} [Sat Aug 15 15:46:58 2015] GET /demo_application/downloadFilename/ => generated 3519 bytes in 4 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 2361|app: 0|req: 12/37] 192.168.1.103 () {40 vars in 737 bytes} [Sat Aug 15 15:46:58 2015] GET /admin/jsi18n/ => generated 2158 bytes in 10 msecs (HTTP/1.1 200) 2 headers in 64 bytes (1 switches on core 0)
+[pid: 2360|app: 0|req: 22/38] 192.168.1.103 () {42 vars in 838 bytes} [Sat Aug 15 15:47:17 2015] GET /admin/ => generated 9845 bytes in 21 msecs (HTTP/1.1 200) 5 headers in 185 bytes (1 switches on core 0)
+[pid: 2360|app: 0|req: 23/39] 192.168.1.103 () {42 vars in 884 bytes} [Sat Aug 15 15:49:00 2015] GET /admin/demo_application/simulatortestresult/ => generated 11730 bytes in 34 msecs (HTTP/1.1 200) 6 headers in 307 bytes (1 switches on core 0)
+[pid: 2361|app: 0|req: 13/40] 192.168.1.103 () {40 vars in 746 bytes} [Sat Aug 15 15:49:00 2015] GET /admin/jsi18n/ => generated 2158 bytes in 13 msecs (HTTP/1.1 200) 2 headers in 64 bytes (1 switches on core 0)
+[pid: 2360|app: 0|req: 24/41] 192.168.1.103 () {42 vars in 847 bytes} [Sat Aug 15 15:49:05 2015] GET /admin/ => generated 9845 bytes in 20 msecs (HTTP/1.1 200) 5 headers in 185 bytes (1 switches on core 0)
+[pid: 2361|app: 0|req: 14/42] 192.168.1.103 () {40 vars in 801 bytes} [Sat Aug 15 15:49:07 2015] GET /demo_application/searchIndex/ => generated 2946 bytes in 3 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 2360|app: 0|req: 25/43] 192.168.1.103 () {46 vars in 981 bytes} [Sat Aug 15 15:49:16 2015] POST /demo_application/searchResult/ => generated 6032 bytes in 14 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 2360|app: 0|req: 26/44] 192.168.1.103 () {40 vars in 906 bytes} [Sat Aug 15 15:49:31 2015] GET /demo_application/ => generated 2946 bytes in 4 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 2360|app: 0|req: 27/45] 192.168.1.103 () {46 vars in 1074 bytes} [Sat Aug 15 15:49:39 2015] POST /demo_application/searchResult/ => generated 3208 bytes in 6 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 2360|app: 0|req: 28/46] 192.168.1.103 () {38 vars in 834 bytes} [Sat Aug 15 15:50:11 2015] GET /demo_application/ => generated 2946 bytes in 3 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 2360|app: 0|req: 29/47] 192.168.1.103 () {40 vars in 871 bytes} [Sat Aug 15 15:50:15 2015] GET /admin/ => generated 9845 bytes in 20 msecs (HTTP/1.1 200) 5 headers in 185 bytes (1 switches on core 0)
+[pid: 2361|app: 0|req: 15/48] 192.168.1.103 () {40 vars in 934 bytes} [Sat Aug 15 15:50:19 2015] GET /admin/demo_application/simulatortestresult/ => generated 11730 bytes in 34 msecs (HTTP/1.1 200) 6 headers in 307 bytes (1 switches on core 0)
+[pid: 2360|app: 0|req: 30/49] 192.168.1.103 () {40 vars in 851 bytes} [Sat Aug 15 15:50:19 2015] GET /admin/jsi18n/ => generated 2158 bytes in 9 msecs (HTTP/1.1 200) 2 headers in 64 bytes (2 switches on core 0)
+[pid: 2361|app: 0|req: 16/50] 192.168.1.103 () {40 vars in 979 bytes} [Sat Aug 15 15:50:21 2015] GET /admin/demo_application/simulatortestresult/add/ => generated 21875 bytes in 51 msecs (HTTP/1.1 200) 6 headers in 307 bytes (1 switches on core 0)
+[pid: 2360|app: 0|req: 31/51] 192.168.1.103 () {40 vars in 855 bytes} [Sat Aug 15 15:50:21 2015] GET /admin/jsi18n/ => generated 2158 bytes in 12 msecs (HTTP/1.1 200) 2 headers in 64 bytes (2 switches on core 0)
+[pid: 2360|app: 0|req: 32/52] 192.168.1.103 () {46 vars in 1212 bytes} [Sat Aug 15 15:51:18 2015] POST /admin/demo_application/simulatortestresult/add/ => generated 0 bytes in 18 msecs (HTTP/1.1 302) 7 headers in 486 bytes (1 switches on core 0)
+[pid: 2361|app: 0|req: 17/53] 192.168.1.103 () {42 vars in 1211 bytes} [Sat Aug 15 15:51:18 2015] GET /admin/demo_application/simulatortestresult/ => generated 12200 bytes in 35 msecs (HTTP/1.1 200) 7 headers in 389 bytes (1 switches on core 0)
+[pid: 2360|app: 0|req: 33/54] 192.168.1.103 () {40 vars in 851 bytes} [Sat Aug 15 15:51:18 2015] GET /admin/jsi18n/ => generated 2158 bytes in 12 msecs (HTTP/1.1 200) 2 headers in 64 bytes (1 switches on core 0)
+[pid: 2361|app: 0|req: 18/55] 192.168.1.103 () {42 vars in 952 bytes} [Sat Aug 15 15:51:24 2015] GET /admin/ => generated 9925 bytes in 24 msecs (HTTP/1.1 200) 5 headers in 185 bytes (1 switches on core 0)
+[pid: 2360|app: 0|req: 34/56] 192.168.1.103 () {40 vars in 906 bytes} [Sat Aug 15 15:51:27 2015] GET /demo_application/searchIndex/ => generated 2946 bytes in 3 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 2360|app: 0|req: 35/57] 192.168.1.103 () {46 vars in 1086 bytes} [Sat Aug 15 15:51:39 2015] POST /demo_application/searchResult/ => generated 3495 bytes in 6 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 2360|app: 0|req: 36/58] 192.168.1.103 () {40 vars in 906 bytes} [Sat Aug 15 15:52:07 2015] GET /demo_application/ => generated 2946 bytes in 3 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 2360|app: 0|req: 37/59] 192.168.1.103 () {42 vars in 943 bytes} [Sat Aug 15 15:52:08 2015] GET /admin/ => generated 9925 bytes in 19 msecs (HTTP/1.1 200) 5 headers in 185 bytes (1 switches on core 0)
+[pid: 2361|app: 0|req: 19/60] 192.168.1.103 () {40 vars in 906 bytes} [Sat Aug 15 15:52:11 2015] GET /demo_application/ => generated 2946 bytes in 3 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 2360|app: 0|req: 38/61] 192.168.1.103 () {42 vars in 926 bytes} [Sat Aug 15 15:52:32 2015] GET /admin/ => generated 9925 bytes in 19 msecs (HTTP/1.1 200) 5 headers in 185 bytes (1 switches on core 0)
+[pid: 2361|app: 0|req: 20/62] 192.168.1.103 () {40 vars in 912 bytes} [Sat Aug 15 15:52:33 2015] GET /demo_application/uploadFilename/ => generated 2211 bytes in 6 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[01;32m Preview Buttom [0m
+[pid: 2360|app: 0|req: 39/63] 192.168.1.103 () {46 vars in 1167 bytes} [Sat Aug 15 15:52:58 2015] POST /demo_application/uploadFilename/ => generated 5869 bytes in 4 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 2360|app: 0|req: 40/64] 192.168.1.103 () {42 vars in 952 bytes} [Sat Aug 15 16:34:26 2015] GET /admin/ => generated 9925 bytes in 21 msecs (HTTP/1.1 200) 5 headers in 185 bytes (1 switches on core 0)
+[pid: 2361|app: 0|req: 21/65] 192.168.1.103 () {40 vars in 912 bytes} [Sat Aug 15 16:34:28 2015] GET /demo_application/uploadFilename/ => generated 2211 bytes in 6 msecs (HTTP/1.1 200) 1 headers in 59 bytes (2 switches on core 0)
+[pid: 2360|app: 0|req: 41/66] 192.168.1.103 () {42 vars in 941 bytes} [Sat Aug 15 16:34:30 2015] GET /admin/ => generated 9925 bytes in 36 msecs (HTTP/1.1 200) 5 headers in 185 bytes (1 switches on core 0)
+[pid: 2361|app: 0|req: 22/67] 192.168.1.103 () {40 vars in 912 bytes} [Sat Aug 15 16:34:32 2015] GET /demo_application/uploadFilename/ => generated 2211 bytes in 6 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[01;32m Preview Buttom [0m
+[pid: 2360|app: 0|req: 42/68] 192.168.1.103 () {46 vars in 1167 bytes} [Sat Aug 15 16:34:57 2015] POST /demo_application/uploadFilename/ => generated 5569 bytes in 5 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[01;32m Preview Buttom [0m
+[pid: 2360|app: 0|req: 43/69] 192.168.1.103 () {46 vars in 1167 bytes} [Sat Aug 15 16:35:58 2015] POST /demo_application/uploadFilename/ => generated 5568 bytes in 5 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[ 2015-08-15 16:48:59 ] Try To Stop Django + uwsgi ... 
+...brutally killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /opt/architecture/simulator
+closing all non-uwsgi socket fds > 2 (max_fd = 1024)...
+found fd 3 mapped to socket 0 (/opt/architecture/simulator/log/mysite.sock)
+running /usr/local/bin/uwsgi
+[uWSGI] getting INI configuration from mysite_uwsgi.ini
+*** Starting uWSGI 2.0.10 (64bit) on [Sat Aug 15 16:49:00 2015] ***
+compiled with version: 4.4.7 20120313 (Red Hat 4.4.7-11) on 08 August 2015 12:30:04
+os: Linux-2.6.32-504.el6.x86_64 #1 SMP Wed Oct 15 04:27:16 UTC 2014
+nodename: localhost.localdomain
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /opt/architecture/simulator
+detected binary path: /usr/local/bin/uwsgi
+chdir() to /opt/architecture/simulator
+your processes number limit is 14841
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited UNIX address /opt/architecture/simulator/log/mysite.sock fd 3
+Python version: 2.7.5 (default, Jul 31 2015, 23:06:22)  [GCC 4.4.7 20120313 (Red Hat 4.4.7-11)]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x1d69790
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 363840 bytes (355 KB) for 4 cores
+*** Operational MODE: preforking ***
+added /opt/architecture/simulator/ to pythonpath.
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x1d69790 pid: 2357 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 2357)
+spawned uWSGI worker 1 (pid: 2988, cores: 1)
+spawned uWSGI worker 2 (pid: 2989, cores: 1)
+spawned uWSGI worker 3 (pid: 2990, cores: 1)
+spawned uWSGI worker 4 (pid: 2991, cores: 1)
+Sat Aug 15 16:49:01 2015 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Aug 15 16:49:01 2015 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Aug 15 16:49:01 2015 - uWSGI worker 3 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Aug 15 16:49:01 2015 - uWSGI worker 4 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+[ 2015-08-15 17:39:13 ] Try To Startup Django + uwsgi + nginx ... 
+[uWSGI] getting INI configuration from mysite_uwsgi.ini
+*** Starting uWSGI 2.0.10 (64bit) on [Sat Aug 15 17:39:13 2015] ***
+compiled with version: 4.4.7 20120313 (Red Hat 4.4.7-11) on 08 August 2015 12:30:04
+os: Linux-2.6.32-504.el6.x86_64 #1 SMP Wed Oct 15 04:27:16 UTC 2014
+nodename: localhost.localdomain
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /opt/architecture/simulator
+detected binary path: /usr/local/bin/uwsgi
+setgid() to 490
+setuid() to 494
+chdir() to /opt/architecture/simulator
+your processes number limit is 14841
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /opt/architecture/simulator/log/mysite.sock fd 3
+Python version: 2.7.5 (default, Jul 31 2015, 23:06:22)  [GCC 4.4.7 20120313 (Red Hat 4.4.7-11)]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x11d3250
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 363840 bytes (355 KB) for 4 cores
+*** Operational MODE: preforking ***
+added /opt/architecture/simulator/ to pythonpath.
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x11d3250 pid: 3295 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 3295)
+spawned uWSGI worker 1 (pid: 3298, cores: 1)
+spawned uWSGI worker 2 (pid: 3299, cores: 1)
+spawned uWSGI worker 3 (pid: 3300, cores: 1)
+spawned uWSGI worker 4 (pid: 3301, cores: 1)
+==> It is OK for uwsgi to Startup
+[pid: 3298|app: 0|req: 1/1] 192.168.1.103 () {38 vars in 800 bytes} [Sat Aug 15 17:39:32 2015] GET / => generated 9925 bytes in 103 msecs (HTTP/1.1 200) 5 headers in 185 bytes (1 switches on core 0)
+[pid: 3299|app: 0|req: 1/2] 192.168.1.103 () {40 vars in 868 bytes} [Sat Aug 15 17:39:34 2015] GET /admin/logout/ => generated 1116 bytes in 105 msecs (HTTP/1.1 200) 6 headers in 316 bytes (1 switches on core 0)
+[pid: 3298|app: 0|req: 2/3] 192.168.1.103 () {40 vars in 867 bytes} [Sat Aug 15 17:39:36 2015] GET /admin/ => generated 1877 bytes in 15 msecs (HTTP/1.1 200) 7 headers in 438 bytes (1 switches on core 0)
+[pid: 3298|app: 0|req: 3/4] 192.168.1.103 () {46 vars in 1017 bytes} [Sat Aug 15 17:39:38 2015] POST /admin/ => generated 0 bytes in 49 msecs (HTTP/1.1 302) 7 headers in 363 bytes (1 switches on core 0)
+[pid: 3299|app: 0|req: 2/5] 192.168.1.103 () {42 vars in 900 bytes} [Sat Aug 15 17:39:38 2015] GET /admin/ => generated 9925 bytes in 25 msecs (HTTP/1.1 200) 5 headers in 185 bytes (1 switches on core 0)
+[pid: 3298|app: 0|req: 4/6] 192.168.1.103 () {40 vars in 934 bytes} [Sat Aug 15 17:39:40 2015] GET /admin/demo_application/simulatortestresult/ => generated 13040 bytes in 38 msecs (HTTP/1.1 200) 6 headers in 307 bytes (1 switches on core 0)
+[pid: 3299|app: 0|req: 3/7] 192.168.1.103 () {40 vars in 851 bytes} [Sat Aug 15 17:39:40 2015] GET /admin/jsi18n/ => generated 2158 bytes in 15 msecs (HTTP/1.1 200) 2 headers in 64 bytes (2 switches on core 0)
+[pid: 3298|app: 0|req: 5/8] 192.168.1.103 () {42 vars in 923 bytes} [Sat Aug 15 17:39:47 2015] GET /admin/logout/ => generated 1116 bytes in 14 msecs (HTTP/1.1 200) 6 headers in 316 bytes (1 switches on core 0)
+[pid: 3299|app: 0|req: 4/9] 192.168.1.103 () {40 vars in 867 bytes} [Sat Aug 15 17:39:48 2015] GET /admin/ => generated 1877 bytes in 12 msecs (HTTP/1.1 200) 7 headers in 438 bytes (1 switches on core 0)
+[ 2015-08-15 17:39:59 ] Try To Stop Django + uwsgi ... 
+...brutally killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /opt/architecture/simulator
+closing all non-uwsgi socket fds > 2 (max_fd = 1024)...
+found fd 3 mapped to socket 0 (/opt/architecture/simulator/log/mysite.sock)
+running /usr/local/bin/uwsgi
+[uWSGI] getting INI configuration from mysite_uwsgi.ini
+*** Starting uWSGI 2.0.10 (64bit) on [Sat Aug 15 17:40:00 2015] ***
+compiled with version: 4.4.7 20120313 (Red Hat 4.4.7-11) on 08 August 2015 12:30:04
+os: Linux-2.6.32-504.el6.x86_64 #1 SMP Wed Oct 15 04:27:16 UTC 2014
+nodename: localhost.localdomain
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /opt/architecture/simulator
+detected binary path: /usr/local/bin/uwsgi
+chdir() to /opt/architecture/simulator
+your processes number limit is 14841
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited UNIX address /opt/architecture/simulator/log/mysite.sock fd 3
+Python version: 2.7.5 (default, Jul 31 2015, 23:06:22)  [GCC 4.4.7 20120313 (Red Hat 4.4.7-11)]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x1c19790
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 363840 bytes (355 KB) for 4 cores
+*** Operational MODE: preforking ***
+added /opt/architecture/simulator/ to pythonpath.
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x1c19790 pid: 3295 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 3295)
+spawned uWSGI worker 1 (pid: 3356, cores: 1)
+spawned uWSGI worker 2 (pid: 3357, cores: 1)
+spawned uWSGI worker 3 (pid: 3358, cores: 1)
+spawned uWSGI worker 4 (pid: 3359, cores: 1)
+Sat Aug 15 17:40:01 2015 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Aug 15 17:40:01 2015 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Aug 15 17:40:01 2015 - uWSGI worker 3 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Aug 15 17:40:01 2015 - uWSGI worker 4 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+[ 2015-08-15 17:41:29 ] Try To Startup Django + uwsgi + nginx ... 
+[uWSGI] getting INI configuration from mysite_uwsgi.ini
+*** Starting uWSGI 2.0.10 (64bit) on [Sat Aug 15 17:41:29 2015] ***
+compiled with version: 4.4.7 20120313 (Red Hat 4.4.7-11) on 08 August 2015 12:30:04
+os: Linux-2.6.32-504.el6.x86_64 #1 SMP Wed Oct 15 04:27:16 UTC 2014
+nodename: localhost.localdomain
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /opt/architecture/simulator
+detected binary path: /usr/local/bin/uwsgi
+setgid() to 490
+setuid() to 494
+chdir() to /opt/architecture/simulator
+your processes number limit is 14841
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /opt/architecture/simulator/log/mysite.sock fd 3
+Python version: 2.7.5 (default, Jul 31 2015, 23:06:22)  [GCC 4.4.7 20120313 (Red Hat 4.4.7-11)]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x25f2250
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 363840 bytes (355 KB) for 4 cores
+*** Operational MODE: preforking ***
+added /opt/architecture/simulator/ to pythonpath.
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x25f2250 pid: 3389 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 3389)
+spawned uWSGI worker 1 (pid: 3392, cores: 1)
+spawned uWSGI worker 2 (pid: 3393, cores: 1)
+spawned uWSGI worker 3 (pid: 3394, cores: 1)
+spawned uWSGI worker 4 (pid: 3395, cores: 1)
+==> It is OK for uwsgi to Startup
+[pid: 3392|app: 0|req: 1/1] 192.168.1.103 () {46 vars in 1017 bytes} [Sat Aug 15 17:42:50 2015] POST /admin/ => generated 0 bytes in 143 msecs (HTTP/1.1 302) 7 headers in 363 bytes (1 switches on core 0)
+[pid: 3393|app: 0|req: 1/2] 192.168.1.103 () {42 vars in 900 bytes} [Sat Aug 15 17:42:50 2015] GET /admin/ => generated 9925 bytes in 99 msecs (HTTP/1.1 200) 5 headers in 185 bytes (1 switches on core 0)
+[pid: 3392|app: 0|req: 2/3] 192.168.1.103 () {40 vars in 912 bytes} [Sat Aug 15 17:42:51 2015] GET /demo_application/uploadFilename/ => generated 2211 bytes in 8 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 3393|app: 0|req: 2/4] 192.168.1.103 () {42 vars in 941 bytes} [Sat Aug 15 17:42:53 2015] GET /admin/ => generated 9925 bytes in 20 msecs (HTTP/1.1 200) 5 headers in 185 bytes (1 switches on core 0)
+[pid: 3392|app: 0|req: 3/5] 192.168.1.103 () {40 vars in 916 bytes} [Sat Aug 15 17:42:54 2015] GET /demo_application/downloadFilename/ => generated 2757 bytes in 1 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 3394|app: 0|req: 1/6] 192.168.1.103 () {40 vars in 842 bytes} [Sat Aug 15 17:42:54 2015] GET /admin/jsi18n/ => generated 2158 bytes in 102 msecs (HTTP/1.1 200) 2 headers in 64 bytes (1 switches on core 0)
+[pid: 3392|app: 0|req: 4/7] 192.168.1.103 () {40 vars in 944 bytes} [Sat Aug 15 17:42:56 2015] GET /demo_application/downloadFilename/ => generated 2757 bytes in 2 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 3393|app: 0|req: 3/8] 192.168.1.103 () {40 vars in 842 bytes} [Sat Aug 15 17:42:56 2015] GET /admin/jsi18n/ => generated 2158 bytes in 7 msecs (HTTP/1.1 200) 2 headers in 64 bytes (1 switches on core 0)
+[pid: 3392|app: 0|req: 5/9] 192.168.1.103 () {42 vars in 941 bytes} [Sat Aug 15 17:42:57 2015] GET /admin/ => generated 9925 bytes in 22 msecs (HTTP/1.1 200) 5 headers in 185 bytes (1 switches on core 0)
+[pid: 3392|app: 0|req: 6/10] 192.168.1.103 () {40 vars in 882 bytes} [Sat Aug 15 17:43:00 2015] GET /admin/sites/site/ => generated 4765 bytes in 28 msecs (HTTP/1.1 200) 6 headers in 307 bytes (1 switches on core 0)
+[pid: 3393|app: 0|req: 4/11] 192.168.1.103 () {40 vars in 825 bytes} [Sat Aug 15 17:43:00 2015] GET /admin/jsi18n/ => generated 2158 bytes in 11 msecs (HTTP/1.1 200) 2 headers in 64 bytes (1 switches on core 0)
+[pid: 3392|app: 0|req: 7/12] 192.168.1.103 () {42 vars in 926 bytes} [Sat Aug 15 17:43:02 2015] GET /admin/ => generated 9925 bytes in 21 msecs (HTTP/1.1 200) 5 headers in 185 bytes (2 switches on core 0)
+[pid: 3393|app: 0|req: 5/13] 192.168.1.103 () {42 vars in 989 bytes} [Sat Aug 15 17:43:03 2015] GET /admin/demo_application/simulatortestresult/ => generated 3355 bytes in 23 msecs (HTTP/1.1 200) 6 headers in 307 bytes (1 switches on core 0)
+[pid: 3392|app: 0|req: 8/14] 192.168.1.103 () {40 vars in 851 bytes} [Sat Aug 15 17:43:03 2015] GET /admin/jsi18n/ => generated 2158 bytes in 15 msecs (HTTP/1.1 200) 2 headers in 64 bytes (1 switches on core 0)
+[pid: 3393|app: 0|req: 6/15] 192.168.1.103 () {42 vars in 926 bytes} [Sat Aug 15 17:43:04 2015] GET /admin/ => generated 9925 bytes in 22 msecs (HTTP/1.1 200) 5 headers in 185 bytes (1 switches on core 0)
+[pid: 3392|app: 0|req: 9/16] 192.168.1.103 () {40 vars in 880 bytes} [Sat Aug 15 17:43:05 2015] GET /admin/auth/user/ => generated 6312 bytes in 31 msecs (HTTP/1.1 200) 6 headers in 307 bytes (1 switches on core 0)
+[pid: 3393|app: 0|req: 7/17] 192.168.1.103 () {40 vars in 824 bytes} [Sat Aug 15 17:43:05 2015] GET /admin/jsi18n/ => generated 2158 bytes in 10 msecs (HTTP/1.1 200) 2 headers in 64 bytes (1 switches on core 0)
+[pid: 3392|app: 0|req: 10/18] 192.168.1.103 () {42 vars in 925 bytes} [Sat Aug 15 17:43:07 2015] GET /admin/ => generated 9925 bytes in 22 msecs (HTTP/1.1 200) 5 headers in 185 bytes (2 switches on core 0)
+[pid: 3393|app: 0|req: 8/19] 192.168.1.103 () {40 vars in 882 bytes} [Sat Aug 15 17:43:08 2015] GET /admin/auth/group/ => generated 3225 bytes in 22 msecs (HTTP/1.1 200) 6 headers in 307 bytes (1 switches on core 0)
+[pid: 3392|app: 0|req: 11/20] 192.168.1.103 () {40 vars in 825 bytes} [Sat Aug 15 17:43:08 2015] GET /admin/jsi18n/ => generated 2158 bytes in 12 msecs (HTTP/1.1 200) 2 headers in 64 bytes (1 switches on core 0)
+[pid: 3392|app: 0|req: 12/21] 192.168.1.103 () {42 vars in 925 bytes} [Sat Aug 15 17:43:11 2015] GET /admin/ => generated 9925 bytes in 21 msecs (HTTP/1.1 200) 5 headers in 185 bytes (1 switches on core 0)
+[pid: 3392|app: 0|req: 13/22] 192.168.1.103 () {40 vars in 924 bytes} [Sat Aug 15 17:43:20 2015] GET /admin/demo_application/uploadfilename/ => generated 3320 bytes in 22 msecs (HTTP/1.1 200) 6 headers in 307 bytes (1 switches on core 0)
+[pid: 3393|app: 0|req: 9/23] 192.168.1.103 () {40 vars in 846 bytes} [Sat Aug 15 17:43:20 2015] GET /admin/jsi18n/ => generated 2158 bytes in 13 msecs (HTTP/1.1 200) 2 headers in 64 bytes (1 switches on core 0)
+[pid: 3392|app: 0|req: 14/24] 192.168.1.103 () {42 vars in 947 bytes} [Sat Aug 15 17:43:22 2015] GET /admin/ => generated 9925 bytes in 20 msecs (HTTP/1.1 200) 5 headers in 185 bytes (1 switches on core 0)
+[pid: 3392|app: 0|req: 15/25] 192.168.1.103 () {42 vars in 989 bytes} [Sat Aug 15 17:43:23 2015] GET /admin/demo_application/simulatortestresult/ => generated 3355 bytes in 23 msecs (HTTP/1.1 200) 6 headers in 307 bytes (1 switches on core 0)
+[pid: 3393|app: 0|req: 10/26] 192.168.1.103 () {40 vars in 851 bytes} [Sat Aug 15 17:43:23 2015] GET /admin/jsi18n/ => generated 2158 bytes in 15 msecs (HTTP/1.1 200) 2 headers in 64 bytes (1 switches on core 0)
+[pid: 3392|app: 0|req: 16/27] 192.168.1.103 () {42 vars in 947 bytes} [Sat Aug 15 17:43:24 2015] GET /admin/ => generated 9925 bytes in 22 msecs (HTTP/1.1 200) 5 headers in 185 bytes (1 switches on core 0)
+[pid: 3393|app: 0|req: 11/28] 192.168.1.103 () {40 vars in 912 bytes} [Sat Aug 15 17:43:27 2015] GET /demo_application/uploadFilename/ => generated 2211 bytes in 7 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[01;32m Sumbit Directly [0m
+/usr/local/lib/python2.7/site-packages/django/db/models/fields/__init__.py:808: RuntimeWarning: DateTimeField received a naive datetime (2015-08-15 17:43:49.340273) while time zone support is active.
+  RuntimeWarning)
+[pid: 3392|app: 0|req: 17/29] 192.168.1.103 () {46 vars in 1171 bytes} [Sat Aug 15 17:43:49 2015] POST /demo_application/uploadFilename/ => generated 0 bytes in 10 msecs (HTTP/1.1 302) 2 headers in 136 bytes (9 switches on core 0)
+[pid: 3393|app: 0|req: 12/30] 192.168.1.103 () {42 vars in 986 bytes} [Sat Aug 15 17:43:49 2015] GET /demo_application/postUploadFilename/ => generated 1298 bytes in 5 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 3392|app: 0|req: 18/31] 192.168.1.103 () {40 vars in 942 bytes} [Sat Aug 15 17:43:50 2015] GET /demo_application/uploadFilename/ => generated 2211 bytes in 6 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[01;32m Preview Buttom [0m
+[pid: 3392|app: 0|req: 19/32] 192.168.1.103 () {46 vars in 1173 bytes} [Sat Aug 15 17:44:11 2015] POST /demo_application/uploadFilename/ => generated 5915 bytes in 7 msecs (HTTP/1.1 200) 1 headers in 59 bytes (14 switches on core 0)
+[01;35m [<QueryDict: {u'testResultDetailLink': [u'www.google.com'], u'testItemReversedThree': [u'11.1516117909'], u'testUser': [u'LMQ'], u'testRecordTime': [u'2015-08-15 16:03:00'], u'testSoftware': [u'Software 11'], u'testConfiguration': [u'CPU=POWER8 mem=18G harddisk=548G'], u'fileName': [u'\u5c4f\u5e55\u5feb\u7167 2015-08-02 \u4e0b\u534812.01.15.png'], u'testComment': [u'my comments 2'], u'testItemReversedOne': [u'11.4704774771'], u'testItemL1MissRate': [u'13.2571214333'], u'testItemReversedTwo': [u'20.1495065717'], u'testItemMemoryBandwidth': [u'18.5170903124'], u'testTime': [u'2015-08-15 17:44:11'], u'testType': [u'L3'], u'testItemIPC': [u'14.0569116978'], u'Option': [u'Sumbit']}>] [0m
+/usr/local/lib/python2.7/site-packages/django/db/models/fields/__init__.py:808: RuntimeWarning: DateTimeField received a naive datetime (2015-08-15 16:03:00) while time zone support is active.
+  RuntimeWarning)
+/usr/local/lib/python2.7/site-packages/django/db/models/fields/__init__.py:808: RuntimeWarning: DateTimeField received a naive datetime (2015-08-15 17:44:11) while time zone support is active.
+  RuntimeWarning)
+[pid: 3392|app: 0|req: 20/33] 192.168.1.103 () {46 vars in 1175 bytes} [Sat Aug 15 17:49:05 2015] POST /demo_application/echoUploadFilename/ => generated 0 bytes in 7 msecs (HTTP/1.1 302) 2 headers in 136 bytes (1 switches on core 0)
+[pid: 3393|app: 0|req: 13/34] 192.168.1.103 () {42 vars in 986 bytes} [Sat Aug 15 17:49:05 2015] GET /demo_application/postUploadFilename/ => generated 1298 bytes in 7 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 3392|app: 0|req: 21/35] 192.168.1.103 () {40 vars in 942 bytes} [Sat Aug 15 17:49:07 2015] GET /demo_application/uploadFilename/ => generated 2211 bytes in 6 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[01;32m Preview Buttom [0m
+[pid: 3392|app: 0|req: 22/36] 192.168.1.103 () {46 vars in 1171 bytes} [Sat Aug 15 17:49:25 2015] POST /demo_application/uploadFilename/ => generated 6040 bytes in 6 msecs (HTTP/1.1 200) 1 headers in 59 bytes (9 switches on core 0)
+[01;35m [<QueryDict: {u'testResultDetailLink': [u'www.google.com'], u'testItemReversedThree': [u'14.6068936353'], u'testUser': [u'mmm'], u'testRecordTime': [u'2015-08-15 16:30:00'], u'testSoftware': [u'Software 25'], u'testConfiguration': [u'CPU=POWER8 mem=32G harddisk=1032G'], u'fileName': [u'\u5c4f\u5e55\u5feb\u7167 2015-08-03 \u4e0b\u534811.03.49.png'], u'testComment': [u'kkjkj'], u'testItemReversedOne': [u'11.8885139998'], u'testItemL1MissRate': [u'16.8725346566'], u'testItemReversedTwo': [u'15.2407892659'], u'testItemMemoryBandwidth': [u'13.6556594705'], u'testTime': [u'2015-08-15 17:49:25'], u'testType': [u'MCU'], u'testItemIPC': [u'14.581768499'], u'Option': [u'Sumbit']}>] [0m
+/usr/local/lib/python2.7/site-packages/django/db/models/fields/__init__.py:808: RuntimeWarning: DateTimeField received a naive datetime (2015-08-15 16:30:00) while time zone support is active.
+  RuntimeWarning)
+/usr/local/lib/python2.7/site-packages/django/db/models/fields/__init__.py:808: RuntimeWarning: DateTimeField received a naive datetime (2015-08-15 17:49:25) while time zone support is active.
+  RuntimeWarning)
+[pid: 3392|app: 0|req: 23/37] 192.168.1.103 () {46 vars in 1175 bytes} [Sat Aug 15 17:50:06 2015] POST /demo_application/echoUploadFilename/ => generated 0 bytes in 7 msecs (HTTP/1.1 302) 2 headers in 136 bytes (1 switches on core 0)
+[pid: 3393|app: 0|req: 14/38] 192.168.1.103 () {42 vars in 986 bytes} [Sat Aug 15 17:50:06 2015] GET /demo_application/postUploadFilename/ => generated 1298 bytes in 5 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 3392|app: 0|req: 24/39] 192.168.1.103 () {40 vars in 936 bytes} [Sat Aug 15 17:50:08 2015] GET /demo_application/searchIndex/ => generated 2946 bytes in 2 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 3392|app: 0|req: 25/40] 192.168.1.103 () {46 vars in 1086 bytes} [Sat Aug 15 17:50:18 2015] POST /demo_application/searchResult/ => generated 923 bytes in 3 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 3393|app: 0|req: 15/41] 192.168.1.103 () {40 vars in 906 bytes} [Sat Aug 15 17:50:20 2015] GET /demo_application/ => generated 2946 bytes in 3 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 3394|app: 0|req: 2/42] 192.168.1.103 () {42 vars in 926 bytes} [Sat Aug 15 17:50:23 2015] GET /admin/ => generated 9925 bytes in 45 msecs (HTTP/1.1 200) 5 headers in 185 bytes (1 switches on core 0)
+[pid: 3392|app: 0|req: 26/43] 192.168.1.103 () {42 vars in 989 bytes} [Sat Aug 15 17:50:24 2015] GET /admin/demo_application/simulatortestresult/ => generated 5553 bytes in 29 msecs (HTTP/1.1 200) 6 headers in 307 bytes (1 switches on core 0)
+[pid: 3393|app: 0|req: 16/44] 192.168.1.103 () {40 vars in 851 bytes} [Sat Aug 15 17:50:24 2015] GET /admin/jsi18n/ => generated 2158 bytes in 12 msecs (HTTP/1.1 200) 2 headers in 64 bytes (1 switches on core 0)
+[pid: 3392|app: 0|req: 27/45] 192.168.1.103 () {40 vars in 975 bytes} [Sat Aug 15 17:50:25 2015] GET /admin/demo_application/simulatortestresult/3/ => generated 29087 bytes in 69 msecs (HTTP/1.1 200) 6 headers in 307 bytes (1 switches on core 0)
+[pid: 3392|app: 0|req: 28/46] 192.168.1.103 () {40 vars in 853 bytes} [Sat Aug 15 17:50:25 2015] GET /admin/jsi18n/ => generated 2158 bytes in 12 msecs (HTTP/1.1 200) 2 headers in 64 bytes (2 switches on core 0)
+[pid: 3392|app: 0|req: 29/47] 192.168.1.103 () {40 vars in 975 bytes} [Sat Aug 15 17:50:34 2015] GET /admin/demo_application/simulatortestresult/2/ => generated 29093 bytes in 57 msecs (HTTP/1.1 200) 6 headers in 307 bytes (1 switches on core 0)
+[pid: 3393|app: 0|req: 17/48] 192.168.1.103 () {40 vars in 853 bytes} [Sat Aug 15 17:50:34 2015] GET /admin/jsi18n/ => generated 2158 bytes in 10 msecs (HTTP/1.1 200) 2 headers in 64 bytes (2 switches on core 0)
+[pid: 3392|app: 0|req: 30/49] 192.168.1.103 () {42 vars in 952 bytes} [Sat Aug 15 17:50:39 2015] GET /admin/ => generated 9925 bytes in 21 msecs (HTTP/1.1 200) 5 headers in 185 bytes (2 switches on core 0)
+[pid: 3393|app: 0|req: 18/50] 192.168.1.103 () {42 vars in 989 bytes} [Sat Aug 15 17:50:40 2015] GET /admin/demo_application/simulatortestresult/ => generated 5553 bytes in 24 msecs (HTTP/1.1 200) 6 headers in 307 bytes (1 switches on core 0)
+[pid: 3392|app: 0|req: 31/51] 192.168.1.103 () {40 vars in 851 bytes} [Sat Aug 15 17:50:40 2015] GET /admin/jsi18n/ => generated 2158 bytes in 11 msecs (HTTP/1.1 200) 2 headers in 64 bytes (1 switches on core 0)
+[pid: 3393|app: 0|req: 19/52] 192.168.1.103 () {40 vars in 979 bytes} [Sat Aug 15 17:50:41 2015] GET /admin/demo_application/simulatortestresult/add/ => generated 21875 bytes in 49 msecs (HTTP/1.1 200) 6 headers in 307 bytes (2 switches on core 0)
+[pid: 3392|app: 0|req: 32/53] 192.168.1.103 () {40 vars in 855 bytes} [Sat Aug 15 17:50:41 2015] GET /admin/jsi18n/ => generated 2158 bytes in 12 msecs (HTTP/1.1 200) 2 headers in 64 bytes (2 switches on core 0)
+[pid: 3392|app: 0|req: 33/54] 192.168.1.103 () {46 vars in 1212 bytes} [Sat Aug 15 17:51:16 2015] POST /admin/demo_application/simulatortestresult/add/ => generated 0 bytes in 19 msecs (HTTP/1.1 302) 7 headers in 486 bytes (1 switches on core 0)
+[pid: 3393|app: 0|req: 20/55] 192.168.1.103 () {42 vars in 1211 bytes} [Sat Aug 15 17:51:16 2015] GET /admin/demo_application/simulatortestresult/ => generated 6021 bytes in 29 msecs (HTTP/1.1 200) 7 headers in 389 bytes (1 switches on core 0)
+[pid: 3392|app: 0|req: 34/56] 192.168.1.103 () {40 vars in 851 bytes} [Sat Aug 15 17:51:16 2015] GET /admin/jsi18n/ => generated 2158 bytes in 21 msecs (HTTP/1.1 200) 2 headers in 64 bytes (1 switches on core 0)
+[pid: 3393|app: 0|req: 21/57] 192.168.1.103 () {42 vars in 952 bytes} [Sat Aug 15 17:51:18 2015] GET /admin/ => generated 10001 bytes in 20 msecs (HTTP/1.1 200) 5 headers in 185 bytes (1 switches on core 0)
+[pid: 3392|app: 0|req: 35/58] 192.168.1.103 () {40 vars in 906 bytes} [Sat Aug 15 17:51:22 2015] GET /demo_application/searchIndex/ => generated 2946 bytes in 2 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[01;31m One of Start Time and End Time may be empty. Dump the time: Start Time=[<s:property value="#Start Time"/>] and End Time=[<s:property value="#End Time"/>] [0m
+[pid: 3392|app: 0|req: 36/59] 192.168.1.103 () {46 vars in 1088 bytes} [Sat Aug 15 17:51:32 2015] POST /demo_application/searchResult/ => generated 1134 bytes in 4 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 3392|app: 0|req: 37/60] 192.168.1.103 () {40 vars in 906 bytes} [Sat Aug 15 17:51:42 2015] GET /demo_application/ => generated 2946 bytes in 2 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 3393|app: 0|req: 22/61] 192.168.1.103 () {42 vars in 926 bytes} [Sat Aug 15 17:51:43 2015] GET /admin/ => generated 10001 bytes in 19 msecs (HTTP/1.1 200) 5 headers in 185 bytes (1 switches on core 0)
+[pid: 3392|app: 0|req: 38/62] 192.168.1.103 () {42 vars in 989 bytes} [Sat Aug 15 17:51:54 2015] GET /admin/demo_application/simulatortestresult/ => generated 5822 bytes in 48 msecs (HTTP/1.1 200) 6 headers in 307 bytes (1 switches on core 0)
+[pid: 3393|app: 0|req: 23/63] 192.168.1.103 () {40 vars in 851 bytes} [Sat Aug 15 17:51:54 2015] GET /admin/jsi18n/ => generated 2158 bytes in 16 msecs (HTTP/1.1 200) 2 headers in 64 bytes (2 switches on core 0)
+[pid: 3392|app: 0|req: 39/64] 192.168.1.103 () {42 vars in 952 bytes} [Sat Aug 15 17:51:57 2015] GET /admin/ => generated 10001 bytes in 26 msecs (HTTP/1.1 200) 5 headers in 185 bytes (1 switches on core 0)
+[pid: 3392|app: 0|req: 40/65] 192.168.1.103 () {40 vars in 906 bytes} [Sat Aug 15 17:55:09 2015] GET /demo_application/searchIndex/ => generated 2946 bytes in 5 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 3392|app: 0|req: 41/66] 192.168.1.103 () {46 vars in 1086 bytes} [Sat Aug 15 17:55:20 2015] POST /demo_application/searchResult/ => generated 23106 bytes in 31 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 3392|app: 0|req: 42/67] 192.168.1.103 () {40 vars in 906 bytes} [Sat Aug 15 17:56:13 2015] GET /demo_application/ => generated 2946 bytes in 6 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[01;31m One of Start Time and End Time may be empty. Dump the time: Start Time=[<s:property value="#Start Time"/>] and End Time=[<s:property value="#End Time"/>] [0m
+[pid: 3392|app: 0|req: 43/68] 192.168.1.103 () {46 vars in 1076 bytes} [Sat Aug 15 17:56:20 2015] POST /demo_application/searchResult/ => generated 11543 bytes in 49 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 3392|app: 0|req: 44/69] 192.168.1.103 () {40 vars in 884 bytes} [Sat Aug 15 17:57:26 2015] GET /admin/ => generated 10001 bytes in 22 msecs (HTTP/1.1 200) 5 headers in 185 bytes (1 switches on core 0)
+[pid: 3392|app: 0|req: 45/70] 192.168.1.103 () {40 vars in 912 bytes} [Sat Aug 15 17:57:36 2015] GET /demo_application/uploadFilename/ => generated 2211 bytes in 7 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[01;32m Sumbit Directly [0m
+/usr/local/lib/python2.7/site-packages/django/db/models/fields/__init__.py:808: RuntimeWarning: DateTimeField received a naive datetime (2015-08-15 17:57:51.884333) while time zone support is active.
+  RuntimeWarning)
+[pid: 3392|app: 0|req: 46/71] 192.168.1.103 () {46 vars in 1171 bytes} [Sat Aug 15 17:57:51 2015] POST /demo_application/uploadFilename/ => generated 0 bytes in 8 msecs (HTTP/1.1 302) 2 headers in 136 bytes (7 switches on core 0)
+[pid: 3393|app: 0|req: 24/72] 192.168.1.103 () {42 vars in 986 bytes} [Sat Aug 15 17:57:51 2015] GET /demo_application/postUploadFilename/ => generated 1298 bytes in 5 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 3392|app: 0|req: 47/73] 192.168.1.103 () {40 vars in 942 bytes} [Sat Aug 15 17:57:53 2015] GET /demo_application/uploadFilename/ => generated 2211 bytes in 7 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[01;32m Preview Buttom [0m
+[pid: 3392|app: 0|req: 48/74] 192.168.1.103 () {46 vars in 1169 bytes} [Sat Aug 15 17:58:10 2015] POST /demo_application/uploadFilename/ => generated 6043 bytes in 5 msecs (HTTP/1.1 200) 1 headers in 59 bytes (7 switches on core 0)
+[01;35m [<QueryDict: {u'testResultDetailLink': [u'www.google.com'], u'testItemReversedThree': [u'18.7305890313'], u'testUser': [u'fsfsgsf'], u'testRecordTime': [u'2015-08-15 16:33:00'], u'testSoftware': [u'Software 10000'], u'testConfiguration': [u'CPU=POWER8 mem=20G harddisk=708G'], u'fileName': [u'\u5c4f\u5e55\u5feb\u7167 2015-08-09 \u4e0b\u53484.09.10.png'], u'testComment': [u'ggeeqeq'], u'testItemReversedOne': [u'13.000000'], u'testItemL1MissRate': [u'10.3671553516'], u'testItemReversedTwo': [u'12.8281255545'], u'testItemMemoryBandwidth': [u'12.7614109931'], u'testTime': [u'2015-08-15 17:58:10'], u'testType': [u'L3'], u'testItemIPC': [u'17.653431042'], u'Option': [u'Sumbit']}>] [0m
+/usr/local/lib/python2.7/site-packages/django/db/models/fields/__init__.py:808: RuntimeWarning: DateTimeField received a naive datetime (2015-08-15 16:33:00) while time zone support is active.
+  RuntimeWarning)
+/usr/local/lib/python2.7/site-packages/django/db/models/fields/__init__.py:808: RuntimeWarning: DateTimeField received a naive datetime (2015-08-15 17:58:10) while time zone support is active.
+  RuntimeWarning)
+[pid: 3392|app: 0|req: 49/75] 192.168.1.103 () {46 vars in 1175 bytes} [Sat Aug 15 17:58:28 2015] POST /demo_application/echoUploadFilename/ => generated 0 bytes in 6 msecs (HTTP/1.1 302) 2 headers in 136 bytes (1 switches on core 0)
+[pid: 3393|app: 0|req: 25/76] 192.168.1.103 () {42 vars in 986 bytes} [Sat Aug 15 17:58:28 2015] GET /demo_application/postUploadFilename/ => generated 1298 bytes in 8 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 3392|app: 0|req: 50/77] 192.168.1.103 () {40 vars in 942 bytes} [Sat Aug 15 17:59:10 2015] GET /demo_application/uploadFilename/ => generated 2211 bytes in 10 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[01;32m Preview Buttom [0m
+[pid: 3392|app: 0|req: 51/78] 192.168.1.103 () {46 vars in 1169 bytes} [Sat Aug 15 17:59:26 2015] POST /demo_application/uploadFilename/ => generated 6044 bytes in 4 msecs (HTTP/1.1 200) 1 headers in 59 bytes (3 switches on core 0)
+[01;35m [<QueryDict: {u'testResultDetailLink': [u'www.google.com'], u'testItemReversedThree': [u'13.0000'], u'testUser': [u'lkkllll'], u'testRecordTime': [u'2015-08-15 16:36:00'], u'testSoftware': [u'Software 2600'], u'testConfiguration': [u'CPU=POWER8 mem=29G harddisk=1010G'], u'fileName': [u'\u5c4f\u5e55\u5feb\u7167 2015-08-09 \u4e0b\u53484.09.10.png'], u'testComment': [u'kkkkkkk'], u'testItemReversedOne': [u'13.0000'], u'testItemL1MissRate': [u'10.00000'], u'testItemReversedTwo': [u'15.0000'], u'testItemMemoryBandwidth': [u'14.0000'], u'testTime': [u'2015-08-15 17:59:26'], u'testType': [u'MCU'], u'testItemIPC': [u'14.0000'], u'Option': [u'Sumbit']}>] [0m
+/usr/local/lib/python2.7/site-packages/django/db/models/fields/__init__.py:808: RuntimeWarning: DateTimeField received a naive datetime (2015-08-15 16:36:00) while time zone support is active.
+  RuntimeWarning)
+/usr/local/lib/python2.7/site-packages/django/db/models/fields/__init__.py:808: RuntimeWarning: DateTimeField received a naive datetime (2015-08-15 17:59:26) while time zone support is active.
+  RuntimeWarning)
+[pid: 3392|app: 0|req: 52/79] 192.168.1.103 () {46 vars in 1175 bytes} [Sat Aug 15 18:00:07 2015] POST /demo_application/echoUploadFilename/ => generated 0 bytes in 8 msecs (HTTP/1.1 302) 2 headers in 136 bytes (1 switches on core 0)
+[pid: 3393|app: 0|req: 26/80] 192.168.1.103 () {42 vars in 986 bytes} [Sat Aug 15 18:00:07 2015] GET /demo_application/postUploadFilename/ => generated 1298 bytes in 5 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 3392|app: 0|req: 53/81] 192.168.1.103 () {40 vars in 942 bytes} [Sat Aug 15 18:00:36 2015] GET /demo_application/uploadFilename/ => generated 2211 bytes in 6 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 3393|app: 0|req: 27/82] 192.168.1.103 () {42 vars in 939 bytes} [Sat Aug 15 18:00:38 2015] GET /admin/ => generated 10001 bytes in 21 msecs (HTTP/1.1 200) 5 headers in 185 bytes (2 switches on core 0)
+[pid: 3392|app: 0|req: 54/83] 192.168.1.103 () {40 vars in 912 bytes} [Sat Aug 15 18:00:43 2015] GET /demo_application/uploadFilename/ => generated 2211 bytes in 5 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
